@@ -198,23 +198,28 @@ h3 {
 
 .section04 {
   padding: var(--padding-tb-75);
+  background-color: var(--secondary-scale01);
 }
 
 .section-s {
   padding: var(--padding-tb-20);
+  background-color: var(--secondary-scale01);
 }
 
 .section05 {
   padding: var(--padding-tb-75);
   color: var(--secondary-scale01);
+  background-color: var(--primary-color);
 }
 
 .section06 {
   padding: var(--padding-bottom-160);
+  background-color: var(--secondary-scale01);
 }
 
 footer {
   padding: var(--padding-tb-48);
+  background-color: var(--primary-color);
 }
 
 @media (max-width: 1024px) {

@@ -1,0 +1,17 @@
+@import 'common.scss'; 
+
+button{
+    border: none;
+    background: none;
+}
+
+.tab-content>.active {
+    display: flex;
+}
+
+@media(max-width:768px){
+    .navbar-toggler{
+        border: none;
+        outline: none;
+    }
+}

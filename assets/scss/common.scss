@@ -1,0 +1,221 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Monsieur+La+Doulaise&family=Nanum+Myeongjo&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/fonts-archive/esamanru/esamanru.css');
+
+:root{
+    --primary-font-type: "Nanum Myeongjo", serif;
+    --secondary-font-type: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --space-font-type: "Monsieur La Doulaise", cursive;
+    --logo-font-type: "esamanru";
+
+    --font-weight-800: 800;
+    --font-weight-500: 500;
+    --font-weight-400: 400;
+    --font-weight-200: 200;
+
+    --font-size-62: 3.88rem;
+    --font-size-44: 2.75rem;
+    --font-size-36: 2.25rem;
+    --font-size-28: 1.75rem;
+    --font-size-24: 1.5rem;
+    --font-size-18: 1.13rem;
+    --font-size-16: 1rem;
+    --font-size-14: .88rem;
+
+    --letter-spacing: .06rem;
+
+    --primary-color: rgb(186, 74, 33);
+    --secondary-scale01: rgb(254, 253, 253);
+    --secondary-scale02: rgb(248, 237, 233);
+    --disabled-color : rgb(186, 178, 175);
+    --font-scale01: rgb(112, 44, 20);
+    --font-scale02: rgb(140, 119, 112);
+    --font-scale03: rgb(211, 179, 167);
+
+    --padding-top-120: 7.5rem 0 4.69rem;
+    --padding-tb-75: 4.69rem 0;
+    --padding-tb-48: 3rem 0;
+    --padding-tb-20: 1.25rem 0;
+    --padding-bottom-160: 4.69rem 0 5rem;
+    --padding-tab-hover: .25rem .63rem;
+
+    --margin-bottom-36: 2.25rem;
+    
+    --border-radius: 2px;
+    --arrow-size: 2.75rem;
+}
+
+body{
+    line-height: 140%;
+}
+img{
+    width: 100%;
+}
+.w-33{
+    width: 33%;
+}
+
+h1{
+    font-family: var(--primary-font-type);
+    font-size: var(--font-size-62);
+    font-weight: var(--font-weight-800);
+    color: var(--primary-color);
+}
+h2{
+    font-family: var(--primary-font-type);
+    font-size: var(--font-size-44);
+    font-weight: var(--font-weight-800);
+    letter-spacing: var(--letter-spacing);
+    color: var(--primary-color);
+}
+h3{
+    font-family: var(--primary-font-type);
+    font-size: var(--font-size-36);
+    font-weight: var(--font-weight-800);
+    letter-spacing: var(--letter-spacing);
+    color: var(--primary-color);
+}
+.gnb-menu{
+    font-family: var(--secondary-font-type);
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-400);
+    letter-spacing: var(--letter-spacing);
+    color: var(--secondary-scale01);
+    padding: var(--padding-tab-hover);
+}
+.gnb-menu:hover{
+    color: var(--primary-color);
+    background-color: var(--secondary-scale01);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+}
+.logo-navbar{
+    font-family: var(--logo-font-type);
+    font-size: var(--font-size-24);
+    font-weight: var(--font-weight-500);
+    letter-spacing: var(--letter-spacing);
+    color: var(--secondary-scale01);
+}
+.logo-navbar:hover{
+    color: var(--secondary-scale01);
+    text-decoration: none;
+}
+.icon-navbar{
+    font-size: var(--font-size-24);
+    color: var(--secondary-scale01);
+    cursor: pointer;
+}
+.tab-text{
+    font-family: var(--secondary-font-type);
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-400);
+    color: var(--font-scale02);
+    padding: var(--padding-tab-hover);
+    cursor: pointer;
+}
+.tab-text:hover, .tab-text.active{
+    color: var(--secondary-scale01);
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+}
+.detail-title{
+    font-family: var(--secondary-font-type);
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-400);
+    color: var(--font-scale01);
+    margin: 0;
+}
+.detail-info{
+    font-family: var(--secondary-font-type);
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-200);
+    color: var(--font-scale02);
+}
+.detail-price{
+    font-family: var(--secondary-font-type);
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-400);
+    letter-spacing: var(--letter-spacing);
+    color: var(--font-scale01);
+}
+.detail-text{
+    font-family: var(--secondary-font-type);
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-200);
+    color: var(--font-scale01);
+}
+.logo-footer{
+    font-family: var(--logo-font-type);
+    font-size: var(--font-size-28);
+    font-weight: var(--font-weight-500);
+    letter-spacing: var(--letter-spacing);
+    color: var(--secondary-scale02);
+}
+
+.navbar{
+    height: 3.75rem;
+    padding: var(--padding-scroll);
+    background-color: var(--primary-color);
+}
+
+.kv{
+    background-color: var(--secondary-scale02);
+    padding: var(--padding-top-120);
+    h2{
+        font-weight: var(--font-weight-400);
+    }
+}
+.section02{
+    background-color: var(--secondary-scale02);
+    padding: var(--padding-tb-75);
+
+    .nav-pills{
+        margin-bottom: var(--margin-bottom-36);
+    }
+}
+.section03{
+    padding: var(--padding-tb-75);
+}
+.section04{
+    padding: var(--padding-tb-75);
+}
+.section-s{
+    padding: var(--padding-tb-20);
+}
+.section05{
+    padding: var(--padding-tb-75);
+    color: var(--secondary-scale01);
+}
+.section06{
+    padding: var(--padding-bottom-160);
+}
+footer{
+    padding: var(--padding-tb-48);
+}
+
+@media(max-width:1024px){
+    :root{
+        --font-size-62: 3.63rem;
+        --font-size-44: 2.5rem;
+        --font-size-36: 2rem;
+        --font-size-18: 1rem;
+        --font-size-14: .75rem;
+
+        --padding-top-120: 6.25rem 0 4.69rem;
+    }
+}
+@media(max-width:768px){
+    :root{
+        --font-size-62: 2.63rem;
+        --font-size-44: 1.88rem;
+        --font-size-36: 1.75rem;
+    }
+}
+@media(max-width:576px){
+    :root{
+        --font-size-62: 2.25rem;
+        --font-size-44: 1.63rem;
+        --font-size-44: 1.5rem;
+    }
+}

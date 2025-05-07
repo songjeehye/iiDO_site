@@ -185,6 +185,15 @@ h3 {
 
 .section03 {
   padding: var(--padding-tb-75);
+  background: linear-gradient(var(--secondary-scale02), var(--secondary-scale01));
+}
+.section03 .bxs-heart {
+  font-size: var(--font-size-36);
+  color: var(--primary-color);
+}
+.section03 .bx-right-arrow-alt {
+  font-size: var(--arrow-size);
+  color: var(--disabled-color);
 }
 
 .section04 {

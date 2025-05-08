@@ -227,6 +227,10 @@ footer {
   background-color: var(--primary-color);
 }
 
+.gap-24 {
+  gap: 24px;
+}
+
 @media (max-width: 1024px) {
   :root {
     --font-size-62: 3.63rem;

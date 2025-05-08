@@ -40,7 +40,9 @@
     --padding-bottom-160: 4.69rem 0 5rem;
     --padding-tab-hover: .25rem .63rem;
 
-    --margin-bottom-36: 2.25rem;
+    --margin-36: 2.25rem;
+    --margin-48: 3rem;
+    --margin-24: 1.5rem;
     
     --border-radius: 2px;
     --arrow-size: 2.75rem;
@@ -176,7 +178,7 @@ h3{
     padding: var(--padding-tb-75);
 
     .nav-pills{
-        margin-bottom: var(--margin-bottom-36);
+        margin-bottom: var(--margin-36);
     }
 }
 .section03{

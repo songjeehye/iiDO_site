@@ -14,14 +14,24 @@
     --font-weight-400: 400;
     --font-weight-200: 200;
 
-    --font-size-62: 3.88rem;
-    --font-size-44: 2.75rem;
-    --font-size-36: 2.25rem;
-    --font-size-28: 1.75rem;
-    --font-size-24: 1.5rem;
-    --font-size-18: 1.13rem;
-    --font-size-16: 1rem;
-    --font-size-14: .88rem;
+    --display-scale-pc: 3.88rem;
+    --display-scale-ta: 3.25rem;
+    --display-scale-mo: 2.38rem;
+    --heading01-scale-pc: 2.75rem;
+    --heading01-scale-ta: 2.38rem;
+    --heading01-scale-mo: 1.63rem;
+    --heading02-scale-pc: 2.38rem;
+    --heading02-scale-ta: 2rem;
+    --heading02-scale-mo: 1.5rem;
+    --body01-scale-pc: 1.25rem;
+    --body01-scale-ta: 1.13rem;
+    --body01-scale-mo: .88rem;
+    --body02-scale-pc: 1.13rem;
+    --body02-scale-ta: 1rem;
+    --body02-scale-mo: .88rem;
+    --detail-scale-pc: .88rem;
+    --detail-scale-ta: .75rem;
+    --detail-scale-mo: .63rem;
 
     --letter-spacing: .06rem;
 
@@ -33,51 +43,66 @@
     --font-scale02: rgb(140, 119, 112);
     --font-scale03: rgb(211, 179, 167);
 
-    --padding-top-120: 7.5rem 0 4.69rem;
-    --padding-tb-75: 4.69rem 0;
-    --padding-tb-48: 3rem 0;
-    --padding-tb-20: 1.25rem 0;
-    --padding-bottom-160: 4.69rem 0 5rem;
+    --section-padding-pc: 4.75rem;
+    --section-padding-pc: 3.75rem;
+    --section-padding-mo: 2.75rem;
+    --header-section-pc: 7.5rem;
+    --header-section-ta: 6.25rem;
+    --header-section-mo: 5rem;
+    --footer-section-pc: 10rem;
+    --footer-section-ta: 9rem;
+    --footer-section-mo: 5rem;
+    --space-section-pc: 1.5rem;
+    --space-section-ta: 1.25rem;
+    --space-section-mo: 1rem;
+    --color-section-pc: 5.75rem;
+    --color-section-ta: 4.75rem;
+    --color-section-mo: 3.75rem;
+
     --padding-tab-hover: .25rem .63rem;
 
-    --margin-36: 2.25rem;
     --margin-48: 3rem;
+    --margin-36: 2.25rem;
+    --margin-28: 1.75rem;
     --margin-24: 1.5rem;
+    --margin-20: 1.25rem;
+    --margin-18: 1.13rem;
+    --margin-14: .88rem;
+    --margin-10: .63rem;
+    --margin-8: .5rem;
+    --margin-6: .38rem;
+    --margin-4: .25rem;
+    --margin-2: .13rem;
     
     --border-radius: 2px;
     --arrow-size: 2.75rem;
 }
 
-body{
-    line-height: 140%;
-}
-img{
+img {
     width: 100%;
 }
-.w-33{
-    width: 33%;
+
+h1, h2, h3 {
+    font-family: var(--primary-font-type);
+    font-weight: var(--font-weight-800);
+    letter-spacing: var(--letter-spacing);
+    line-height: 140%;
+    color: var(--primary-color);
+}
+h1 {
+    font-size: var(--font-size-62);
+}
+h2 {
+    font-size: var(--font-size-44);
+}
+h3 {
+    font-size: var(--font-size-36);
+}
+p {
+    font-family: var(--secondary-font-type);
+    line-height: 140%;
 }
 
-h1{
-    font-family: var(--primary-font-type);
-    font-size: var(--font-size-62);
-    font-weight: var(--font-weight-800);
-    color: var(--primary-color);
-}
-h2{
-    font-family: var(--primary-font-type);
-    font-size: var(--font-size-44);
-    font-weight: var(--font-weight-800);
-    letter-spacing: var(--letter-spacing);
-    color: var(--primary-color);
-}
-h3{
-    font-family: var(--primary-font-type);
-    font-size: var(--font-size-36);
-    font-weight: var(--font-weight-800);
-    letter-spacing: var(--letter-spacing);
-    color: var(--primary-color);
-}
 .gnb-menu{
     font-family: var(--secondary-font-type);
     font-size: var(--font-size-16);

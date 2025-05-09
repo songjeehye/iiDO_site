@@ -1,13 +1,11 @@
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Nanum+Myeongjo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Monsieur+La+Doulaise&family=Nanum+Myeongjo&display=swap');
-@import url('https://cdn.jsdelivr.net/gh/fonts-archive/esamanru/esamanru.css');
 
 :root{
     --primary-font-type: "Nanum Myeongjo", serif;
     --secondary-font-type: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --space-font-type: "Monsieur La Doulaise", cursive;
-    --logo-font-type: "esamanru";
 
     --font-weight-800: 800;
     --font-weight-500: 500;
@@ -16,11 +14,13 @@
 
     --font-size-62: 3.88rem;
     --font-size-52: 3.25rem;
-    --font-size-44: 2.75rem;
+    --font-size-46: 2.88rem;
+    --font-size-42: 2.63rem;
     --font-size-38: 2.38rem;
     --font-size-32: 2rem;
+    --font-size-30: 1.88rem;
     --font-size-26: 1.63rem;
-    --font-size-24: 1.5rem;
+    --font-size-22: 1.38rem;
     --font-size-20: 1.25rem;
     --font-size-18: 1.13rem;
     --font-size-16: 1rem;
@@ -38,26 +38,28 @@
     --font-scale02: rgb(140, 119, 112);
     --font-scale03: rgb(211, 179, 167);
 
-    --padding-160: 10rem;
-    --padding-144: 9rem;
-    --padding-128: 5rem;
     --padding-120: 7.5rem;
     --padding-100: 6.25rem;
     --padding-92: 5.75rem;
     --padding-80: 5rem;
     --padding-76: 4.75rem;
+    --padding-68: 4.25rem;
     --padding-60: 3.75rem;
+    --padding-52: 3.25rem;
+    --padding-50: 3.13rem;
     --padding-44: 2.75rem;
-    --padding-24: 1.5rem;
-    --padding-20: 1.25rem;
-    --padding-16: 1rem;
+    --padding-40: 2.5rem;
+    --padding-30: 1.88rem;
 
     --padding-tab-hover: .25rem .63rem;
 
     --margin-48: 3rem;
     --margin-36: 2.25rem;
+    --margin-32: 2rem;
     --margin-28: 1.75rem;
+    --margin-26: 1.63rem;
     --margin-24: 1.5rem;
+    --margin-22: 1.38rem;
     --margin-20: 1.25rem;
     --margin-18: 1.13rem;
     --margin-14: .88rem;
@@ -80,9 +82,10 @@ h1, h2, h3 {
 }
 h1 {
     font-size: var(--font-size-62);
+    margin-bottom: var(--margin-8);
 }
 h2 {
-    font-size: var(--font-size-44);
+    font-size: var(--font-size-46);
 }
 h3 {
     font-size: var(--font-size-38);
@@ -90,30 +93,8 @@ h3 {
 p, a, button {
     font-family: var(--secondary-font-type);
     line-height: 140%;
+    margin: 0;
 }
-
-header{
-    height: var(--padding-60);
-    color: var(--secondary-scale01);
-
-    .gnb-menu{
-        font-size: var(--font-size-16);
-        font-weight: var(--font-weight-400);
-        letter-spacing: var(--letter-spacing);
-        padding: var(--padding-tab-hover);
-    }
-    .gnb-menu:hover{
-        color: var(--primary-color);
-        background-color: var(--secondary-scale01);
-        border-radius: var(--border-radius);
-        text-decoration: none;
-    }
-    .icon-navbar{
-        font-size: var(--font-size-24);
-        cursor: pointer;
-    }
-}
-
 .tab-text{
     font-size: var(--font-size-18);
     font-weight: var(--font-weight-400);
@@ -135,6 +116,13 @@ header{
     font-size: var(--font-size-14);
     font-weight: var(--font-weight-200);
     color: var(--font-scale02);
+    margin-top: var(--margin-2);
+    margin-bottom: var(--margin-4);
+}
+.space-text{
+    font-family: var(--space-font-type);
+    font-size: var(--font-size-32);
+    color: var(--font-scale03);
 }
 
 .img_border{
@@ -147,61 +135,90 @@ header, .section05, footer {
     background-color: var(--primary-color);
     color: var(--secondary-scale01);
 }
-.kv, .section02 {
+.kv, .section02, .section-s {
     background-color: var(--secondary-scale02);
 }
-.section04, .section-s, .section06 {
+.section04, .section06 {
     background-color: var(--secondary-scale01);
 }
-.section02, .section03, .section05{
-    padding-top: var(--padding-76);
+
+
+.kv, .section02, .section03, .section05, footer {
     padding-bottom: var(--padding-76);
+}
+.section02, .section03, .section04, .section05 {
+    padding-top: var(--padding-76);
+}
+
+.slide_title, .sec05_title {
+    margin-bottom: var(--margin-48);
+}
+.tab_title {
+    margin-bottom: var(--margin-18);
+}
+.tab-content {
+    margin-top: var(--margin-36);
 }
 
 
+header{
+    height: var(--padding-60);
+
+    .gnb-menu, .icon-navbar{
+        color: var(--secondary-scale01);
+    }
+    .gnb-menu{
+        font-size: var(--font-size-16);
+        font-weight: var(--font-weight-400);
+        letter-spacing: var(--letter-spacing);
+        padding: var(--padding-tab-hover);
+    }
+    .gnb-menu:hover{
+        color: var(--primary-color);
+        background-color: var(--secondary-scale01);
+        border-radius: var(--border-radius);
+        text-decoration: none;
+    }
+    .icon-navbar{
+        font-size: var(--font-size-24);
+        cursor: pointer;
+    }
+}
 .kv{
     padding-top: var(--padding-120);
-    padding-bottom: var(--padding-76);
 
     h2{
         font-weight: var(--font-weight-400);
     }
 }
 .section-s{
-    padding-top: var(--padding-24);
-    padding-bottom: var(--padding-24);
+    padding-top: var(--padding-60);
+    padding-bottom: var(--padding-60);
 }
 .section03{
     background: linear-gradient(var(--secondary-scale02), var(--secondary-scale01));
 
+    h2{
+        margin-bottom: var(--margin-24);
+    }
     .detail-title{
         font-weight: var(--font-weight-200);
     }
-    .bxs-heart{
-        font-size: var(--font-size-36);
-        color: var(--primary-color);
-    }
-    .bx-right-arrow-alt{
-        font-size: var(--arrow-size);
-        color: var(--disabled-color);
-    }
 }
 .section04{
-    padding-top: var(--padding-76);
     padding-bottom: var(--padding-92);
 }
 .section06{
     padding-top: var(--padding-92);
-    padding-bottom: var(--padding-160);
+    padding-bottom: var(--padding-120);
 }
-footer{
-    padding-top: var(--padding-60);
-    padding-bottom: var(--padding-60);
-}
+
+
 
 @media(max-width:1024px){
     h1{
         font-size: var(--font-size-52);
+        margin-bottom: var(--margin-6);
     }
     h2{
         font-size: var(--font-size-38);
@@ -215,17 +232,59 @@ footer{
     .detail-info{
         font-size: var(--font-size-12);
     }
-
-}
-@media(max-width:768px){
-    h1{
-        font-size: var(--font-size-38);
-    }
-    h2{
+    .space-text{
         font-size: var(--font-size-26);
     }
+
+    .kv, .section02, .section03, .section05, footer {
+        padding-bottom: var(--padding-60);
+    }
+    .section02, .section03, .section04, .section05 {
+        padding-top: var(--padding-60);
+    }
+    .kv{
+        padding-top: var(--padding-100);
+    }
+    .section04{
+        padding-bottom: var(--padding-76);
+    }
+    .section06{
+        padding-top: var(--padding-76);
+        padding-bottom: var(--padding-100);
+    }
+    .section-s{
+        padding-top: var(--padding-50);
+        padding-bottom: var(--padding-50);
+    }
+
+    .slide_title, .sec05_title {
+        margin-bottom: var(--margin-36);
+    }
+    .tab_title {
+        margin-bottom: var(--margin-14);
+    }
+    .tab-content {
+        margin-top: var(--margin-28);
+    }
+
+    .section03 {
+        h2{
+            margin-bottom: var(--margin-14);
+        }
+    }
+    
+}
+
+@media(max-width:768px){
+    h1{
+        font-size: var(--font-size-42);
+        margin-bottom: var(--margin-4);
+    }
+    h2{
+        font-size: var(--font-size-30);
+    }
     h3{
-        font-size: var(--font-size-24);
+        font-size: var(--font-size-26);
     }
     .tab-text, .detail-title{
         font-size: var(--font-size-14);
@@ -233,8 +292,95 @@ footer{
     .detail-info{
         font-size: var(--font-size-10);
     }
+    .space-text{
+        font-size: var(--font-size-20);
+    }
     
-}
-@media(max-width:576px){
+    .kv, .section02, .section03, .section05, footer {
+        padding-bottom: var(--padding-52);
+    }
+    .section02, .section03, .section04, .section05 {
+        padding-top: var(--padding-52);
+    }
+    .kv{
+        padding-top: var(--padding-80);
+    }
+    .section04{
+        padding-bottom: var(--padding-68);
+    }
+    .section06{
+        padding-top: var(--padding-68);
+        padding-bottom: var(--padding-80);
+    }
+    .section-s{
+        padding-top: var(--padding-40);
+        padding-bottom: var(--padding-40);
+    }
+    
+    .slide_title, .sec05_title {
+        margin-bottom: var(--margin-26);
+    }
+    .tab_title {
+        margin-bottom: var(--margin-10);
+    }
+    .tab-content {
+        margin-top: var(--margin-24);
+    }
 
+    .section03 {
+        h2{
+            margin-bottom: var(--margin-10);
+        }
+    }
+
+}
+
+@media(max-width:576px){
+    h1{
+        font-size: var(--font-size-32);
+    }
+    h2{
+        font-size: var(--font-size-22);
+    }
+    h3{
+        font-size: var(--font-size-20);
+    }
+    .space-text{
+        font-size: var(--font-size-14);
+    }
+    
+    .kv, .section02, .section03, .section05, footer {
+        padding-bottom: var(--padding-44);
+    }
+    .section02, .section03, .section04, .section05 {
+        padding-top: var(--padding-44);
+    }
+    .kv{
+        padding-top: var(--padding-60);
+    }
+    .section04{
+        padding-bottom: var(--padding-68);
+    }
+    .section06{
+        padding-top: var(--padding-68);
+        padding-bottom: var(--padding-60);
+    }
+    .section-s{
+        padding-top: var(--padding-30);
+        padding-bottom: var(--padding-30);
+    }
+
+    .slide_title, .sec05_title {
+        margin-bottom: var(--margin-22);
+    }
+    .tab-content {
+        margin-top: var(--margin-20);
+    }
+
+    .section03 {
+        h2{
+            margin-bottom: var(--margin-8);
+        }
+    }
+    
 }

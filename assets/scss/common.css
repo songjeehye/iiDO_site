@@ -1,0 +1,238 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Nanum+Myeongjo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Monsieur+La+Doulaise&family=Nanum+Myeongjo&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/fonts-archive/esamanru/esamanru.css");
+:root {
+  --primary-font-type: "Nanum Myeongjo", serif;
+  --secondary-font-type: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --space-font-type: "Monsieur La Doulaise", cursive;
+  --logo-font-type: "esamanru";
+  --font-weight-800: 800;
+  --font-weight-500: 500;
+  --font-weight-400: 400;
+  --font-weight-200: 200;
+  --font-size-62: 3.88rem;
+  --font-size-52: 3.25rem;
+  --font-size-44: 2.75rem;
+  --font-size-38: 2.38rem;
+  --font-size-32: 2rem;
+  --font-size-26: 1.63rem;
+  --font-size-24: 1.5rem;
+  --font-size-20: 1.25rem;
+  --font-size-18: 1.13rem;
+  --font-size-16: 1rem;
+  --font-size-14: .88rem;
+  --font-size-12: .75rem;
+  --font-size-10: .63rem;
+  --letter-spacing: .06rem;
+  --primary-color: rgb(186, 74, 33);
+  --secondary-scale01: rgb(254, 253, 253);
+  --secondary-scale02: rgb(248, 237, 233);
+  --disabled-color: rgb(186, 178, 175);
+  --font-scale01: rgb(112, 44, 20);
+  --font-scale02: rgb(140, 119, 112);
+  --font-scale03: rgb(211, 179, 167);
+  --padding-160: 10rem;
+  --padding-144: 9rem;
+  --padding-128: 5rem;
+  --padding-120: 7.5rem;
+  --padding-100: 6.25rem;
+  --padding-92: 5.75rem;
+  --padding-80: 5rem;
+  --padding-76: 4.75rem;
+  --padding-60: 3.75rem;
+  --padding-44: 2.75rem;
+  --padding-24: 1.5rem;
+  --padding-20: 1.25rem;
+  --padding-16: 1rem;
+  --padding-tab-hover: .25rem .63rem;
+  --margin-48: 3rem;
+  --margin-36: 2.25rem;
+  --margin-28: 1.75rem;
+  --margin-24: 1.5rem;
+  --margin-20: 1.25rem;
+  --margin-18: 1.13rem;
+  --margin-14: .88rem;
+  --margin-10: .63rem;
+  --margin-8: .5rem;
+  --margin-6: .38rem;
+  --margin-4: .25rem;
+  --margin-2: .13rem;
+  --border-radius: 2px;
+  --arrow-size: 2.75rem;
+}
+
+h1, h2, h3 {
+  font-family: var(--primary-font-type);
+  font-weight: var(--font-weight-800);
+  letter-spacing: var(--letter-spacing);
+  line-height: 140%;
+  color: var(--primary-color);
+}
+
+h1 {
+  font-size: var(--font-size-62);
+}
+
+h2 {
+  font-size: var(--font-size-44);
+}
+
+h3 {
+  font-size: var(--font-size-38);
+}
+
+p, a, button {
+  font-family: var(--secondary-font-type);
+  line-height: 140%;
+}
+
+header {
+  height: var(--padding-60);
+}
+header a, header i {
+  color: var(--secondary-scale01);
+}
+header .gnb-menu {
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-400);
+  letter-spacing: var(--letter-spacing);
+  padding: var(--padding-tab-hover);
+}
+header .gnb-menu:hover {
+  color: var(--primary-color);
+  background-color: var(--secondary-scale01);
+  border-radius: var(--border-radius);
+  text-decoration: none;
+}
+header .icon-navbar {
+  font-size: var(--font-size-24);
+  cursor: pointer;
+}
+
+.tab-text {
+  font-size: var(--font-size-18);
+  font-weight: var(--font-weight-400);
+  color: var(--font-scale02);
+  padding: var(--padding-tab-hover);
+  cursor: pointer;
+}
+
+.tab-text:hover, .tab-text.active {
+  color: var(--secondary-scale01);
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+}
+
+.detail-title {
+  font-size: var(--font-size-18);
+  font-weight: var(--font-weight-400);
+  color: var(--font-scale01);
+}
+
+.detail-info {
+  font-size: var(--font-size-14);
+  font-weight: var(--font-weight-200);
+  color: var(--font-scale02);
+}
+
+.img_border {
+  border: 0.5px solid var(--disabled-color);
+  border-radius: var(--border-radius);
+}
+
+header, .section05, footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-scale01);
+}
+
+.kv, .section02 {
+  background-color: var(--secondary-scale02);
+}
+
+.section04, .section-s, .section06 {
+  background-color: var(--secondary-scale01);
+}
+
+.section02, .section03, .section05 {
+  padding-top: var(--padding-76);
+  padding-bottom: var(--padding-76);
+}
+
+.kv {
+  padding-top: var(--padding-120);
+  padding-bottom: var(--padding-76);
+}
+.kv h2 {
+  font-weight: var(--font-weight-400);
+}
+
+.section-s {
+  padding-top: var(--padding-24);
+  padding-bottom: var(--padding-24);
+}
+
+.section03 {
+  background: linear-gradient(var(--secondary-scale02), var(--secondary-scale01));
+}
+.section03 .detail-title {
+  font-weight: var(--font-weight-200);
+}
+.section03 .bxs-heart {
+  font-size: var(--font-size-36);
+  color: var(--primary-color);
+}
+.section03 .bx-right-arrow-alt {
+  font-size: var(--arrow-size);
+  color: var(--disabled-color);
+}
+
+.section04 {
+  padding-top: var(--padding-76);
+  padding-bottom: var(--padding-92);
+}
+
+.section06 {
+  padding-top: var(--padding-92);
+  padding-bottom: var(--padding-160);
+}
+
+footer {
+  padding-top: var(--padding-60);
+  padding-bottom: var(--padding-60);
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: var(--font-size-52);
+  }
+  h2 {
+    font-size: var(--font-size-38);
+  }
+  h3 {
+    font-size: var(--font-size-32);
+  }
+  .tab-text, .detail-title {
+    font-size: var(--font-size-16);
+  }
+  .detail-info {
+    font-size: var(--font-size-12);
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: var(--font-size-38);
+  }
+  h2 {
+    font-size: var(--font-size-26);
+  }
+  h3 {
+    font-size: var(--font-size-24);
+  }
+  .tab-text, .detail-title {
+    font-size: var(--font-size-14);
+  }
+  .detail-info {
+    font-size: var(--font-size-10);
+  }
+}/*# sourceMappingURL=common.css.map */

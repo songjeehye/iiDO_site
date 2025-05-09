@@ -1,10 +1,30 @@
 @import 'common.scss'; 
 
-.w-33{
-    width: 33%;
+.kv {   
+    .w-33{
+        width: 33%;
+    }
+    .slide_image {
+        justify-content: space-between;
+    }
 }
-
-
+.section03 {
+    .sec03-right_image{
+        gap: var(--margin-24);
+    }
+    .bxs-heart{
+        font-size: var(--font-size-32);
+        color: var(--primary-color);
+    }
+    .bx-right-arrow-alt{
+        font-size: var(--arrow-size);
+        color: var(--disabled-color);
+        cursor: pointer;
+    }
+}
+.md-block {
+    display: none;
+}
 
 
 
@@ -17,9 +37,30 @@ button{
     display: flex;
 }
 
+
+
+@media(max-width:1024px){
+
+}
+
 @media(max-width:768px){
-    .navbar-toggler{
-        border: none;
-        outline: none;
+    .md-block {
+        display: block;
     }
+    .md-none {
+        display: none;
+    }
+    .kv {
+        .slide_image {
+            justify-content: center;
+            .w-33:not(.md-none){
+                width: 66%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media(max-width:576px){
+
 }

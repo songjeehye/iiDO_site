@@ -521,9 +521,13 @@ header .navbar-nav {
 footer {
   background-color: var(--primary-color);
 }
+footer .row {
+  gap: var(--margin-24);
+}
 footer .footer-content__text {
   font-size: var(--font-size-14);
   font-weight: var(--font-weight-200);
+  letter-spacing: var(--letter-spacing);
   color: var(--font-scale03);
 }
 footer .footer-content_top {
@@ -534,9 +538,6 @@ footer .footer-content_top {
 footer .footer-content_top span {
   font-weight: var(--font-weight-400);
 }
-footer .footer-content_bottom {
-  margin-top: var(--margin-32);
-}
 footer .footer-content_bottom .content_bottom__title {
   font-size: var(--font-size-26);
   font-weight: var(--font-weight-400);
@@ -544,8 +545,7 @@ footer .footer-content_bottom .content_bottom__title {
   color: var(--secondary-scale02);
 }
 footer .footer-content_bottom .content-bottom__icon {
-  margin-top: var(--margin-10);
-  margin-bottom: var(--margin-10);
+  margin-top: var(--margin-18);
   gap: var(--margin-12);
 }
 footer .footer-content_bottom .content-bottom__icon img {

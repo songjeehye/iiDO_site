@@ -518,6 +518,13 @@ header .navbar-nav {
 .section05 .sec05-slide img {
   border-radius: var(--border-radius);
 }
+.section05 .slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+.section05 .slick-dots {
+  position: static;
+  margin-top: var(--margin-12);
+}
 
 footer {
   background-color: var(--primary-color);

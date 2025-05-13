@@ -40,6 +40,13 @@ header{
     .sec05-slide img{
         border-radius: var(--border-radius);
     }
+    .slick-dotted.slick-slider{
+        margin-bottom: 0;
+    }
+    .slick-dots{
+        position: static;
+        margin-top: var(--margin-12);
+    }
 }
 footer {
     background-color: var(--primary-color);

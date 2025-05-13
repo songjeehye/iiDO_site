@@ -61,7 +61,6 @@ footer {
         }
     }
     .footer-content_bottom {
-        // margin-top: var(--margin-32);
         .content_bottom__title {
             font-size: var(--font-size-26);
             font-weight: var(--font-weight-400);
@@ -128,6 +127,14 @@ footer {
     .section02 {
         .tab-content>.row{
             row-gap: 1.5rem;
+        }
+    }
+    footer {
+        .footer-content_logo{
+            text-align: center;
+        }
+        .footer-content_top{
+            justify-content: center;
         }
     }
 }

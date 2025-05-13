@@ -583,6 +583,12 @@ footer .footer-content_bottom .content-bottom__icon img {
   .section02 .tab-content > .row {
     row-gap: 1.5rem;
   }
+  footer .footer-content_logo {
+    text-align: center;
+  }
+  footer .footer-content_top {
+    justify-content: center;
+  }
 }
 @media (max-width: 575.98px) {
   .section03 .bx-right-arrow-alt {

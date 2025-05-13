@@ -36,6 +36,9 @@ header{
         cursor: pointer;
     }
 }
+.sec04_title, .sec06_title {
+    margin-bottom: var(--margin-18);
+}
 .section05 {
     .sec05-slide img{
         border-radius: var(--border-radius);

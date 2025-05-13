@@ -31,10 +31,8 @@ header{
     .sec03-right_image{
         gap: var(--margin-24);
     }
-    .bx-right-arrow-alt{
-        align-content: flex-end;
-        font-size: var(--font-size-44);
-        color: var(--disabled-color);
+    .next-btn{
+        width: var(--font-size-38);
         cursor: pointer;
     }
 }

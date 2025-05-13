@@ -121,6 +121,13 @@ p, a, button {
     line-height: 140%;
     margin: 0;
 }
+a, button {
+    cursor: pointer;
+}
+button{
+    border: none;
+    background: none;
+}
 
 .detail-title{
     font-size: var(--font-size-18);
@@ -136,10 +143,6 @@ p, a, button {
     margin-bottom: var(--margin-4);
 }
 
-button{
-    border: none;
-    background: none;
-}
 .img_border{
     border: .5px solid var(--disabled-color);
     border-radius: var(--border-radius);
@@ -149,17 +152,17 @@ header, .section05 {
     background-color: var(--primary-color);
     color: var(--secondary-scale01);
 }
-.kv, .section02, .section-s {
+.kv, .section02 {
     background-color: var(--secondary-scale02);
 }
 .section04, .section06 {
     background-color: var(--secondary-scale01);
 }
 
-.kv, .section02, .section03, .section05, footer, .section06-middle {
+.kv, .section02, .sec03-content, .section05, .section06-middle, footer{
     padding-bottom: var(--padding-88);
 }
-.section02, .section03, .section04, .section05, footer {
+.section02, .sec03-content, .section04, .section05, footer {
     padding-top: var(--padding-88);
 }
 
@@ -220,16 +223,7 @@ header{
         background-color: var(--primary-color);
         border-radius: var(--border-radius);
     }
-}
-.section-s{
-    padding-top: var(--padding-60);
-    padding-bottom: var(--padding-60);
-    .space-text{
-        font-family: var(--space-font-type);
-        font-size: var(--font-size-32);
-        color: var(--font-scale03);
-    }
-}
+}  
 .section03{
     background: linear-gradient(var(--secondary-scale02), var(--secondary-scale01));
 
@@ -245,6 +239,15 @@ header{
         color: var(--primary-color);
         margin-left: var(--margin-2);
         margin-right: var(--margin-2);
+    }
+    .sec03-space{
+        padding-top: var(--padding-60);
+        padding-bottom: var(--padding-60);
+        .space-text{
+            font-family: var(--space-font-type);
+            font-size: var(--font-size-32);
+            color: var(--font-scale03);
+        }
     }
 }
 .section04{
@@ -275,10 +278,10 @@ header{
         font-size: var(--font-size-34);
     }
     
-    .kv, .section02, .section03, .section05, footer, .section06-middle {
+    .kv, .section02, .sec03-content, .section05, footer, .section06-middle {
         padding-bottom: var(--padding-76);
     }
-    .section02, .section03, .section04, .section05, footer {
+    .section02, .sec03-content, .section04, .section05, footer {
         padding-top: var(--padding-76);
     }
     .section04{
@@ -291,11 +294,13 @@ header{
     .kv{
         padding-top: var(--padding-100);
     }
-    .section-s{
-        padding-top: var(--padding-54);
-        padding-bottom: var(--padding-54);
-        .space-text{
-            font-size: var(--font-size-28);
+    .section03 {
+        .sec03-space{
+            padding-top: var(--padding-54);
+            padding-bottom: var(--padding-54);
+            .space-text{
+                font-size: var(--font-size-28);
+            }
         }
     }
     .slide_title {
@@ -316,10 +321,10 @@ header{
         font-size: var(--font-size-30);
     }
     
-    .kv, .section02, .section03, .section05, footer, .section06-middle {
+    .kv, .section02, .sec03-content, .section05, footer, .section06-middle {
         padding-bottom: var(--padding-64);
     }
-    .section02, .section03, .section04, .section05, footer {
+    .section02, .sec03-content, .section04, .section05, footer {
         padding-top: var(--padding-64);
     }
     .kv{
@@ -332,13 +337,6 @@ header{
         padding-top: var(--padding-80);
         padding-bottom: var(--padding-80);
     }
-    .section-s{
-        padding-top: var(--padding-48);
-        padding-bottom: var(--padding-48);
-        .space-text{
-            font-size: var(--font-size-24);
-        }
-    }
 
     .slide_title {
         margin-bottom: var(--margin-32);
@@ -346,12 +344,12 @@ header{
     .title-image_margin {
         margin-bottom: var(--margin-28);
     }
-
+    
     .section02 {
         .tab_title {
             margin-bottom: var(--margin-16);
         }
-
+        
     }
     .section03 {
         h2{
@@ -359,6 +357,13 @@ header{
         }
         .bxs-heart{
             font-size: var(--font-size-26);
+        }
+        .sec03-space{
+            padding-top: var(--padding-48);
+            padding-bottom: var(--padding-48);
+            .space-text{
+                font-size: var(--font-size-24);
+            }
         }
     }
     
@@ -381,10 +386,10 @@ header{
         font-size: var(--font-size-12);
     }
     
-    .kv, .section02, .section03, .section05, footer, .section06-middle {
+    .kv, .section02, .sec03-content, .section05, footer, .section06-middle {
         padding-bottom: var(--padding-48);
     }
-    .section02, .section03, .section04, .section05, footer {
+    .section02, .sec03-content, .section04, .section05, footer {
         padding-top: var(--padding-48);
     }
     .kv{
@@ -397,13 +402,6 @@ header{
         padding-top: var(--padding-64);
         padding-bottom: var(--padding-60);
     }
-    .section-s{
-        padding-top: var(--padding-42);
-        padding-bottom: var(--padding-42);
-        .space-text{
-            font-size: var(--font-size-20);
-        }
-    }
     
     .slide_title {
         margin-bottom: var(--margin-24);
@@ -411,13 +409,20 @@ header{
     .title-image_margin {
         margin-bottom: var(--margin-24);
     }
-
+    
     .section03 {
         h2{
             margin-bottom: var(--margin-10);
         }
         .bxs-heart{
             font-size: var(--font-size-22);
+        }
+        .sec03-space{
+            padding-top: var(--padding-42);
+            padding-bottom: var(--padding-42);
+            .space-text{
+                font-size: var(--font-size-20);
+            }
         }
     }
 
@@ -440,11 +445,6 @@ header{
         font-size: var(--font-size-10);
     }
 
-    .section-s{
-        .space-text{
-            font-size: var(--font-size-16);
-        }
-    }
     .section02 {
         .tab_title {
             margin-bottom: var(--margin-14);
@@ -452,7 +452,7 @@ header{
         .tab_button{
             gap: var(--margin-10);
         }
-
+        
     }
     .section03 {
         h2{
@@ -460,6 +460,11 @@ header{
         }
         .bxs-heart{
             font-size: var(--font-size-18);
+        }
+        .sec03-space{
+            .space-text{
+                font-size: var(--font-size-16);
+            }
         }
     }
     
@@ -480,10 +485,10 @@ header{
         font-size: var(--font-size-8);
     }
 
-    .kv, .section02, .section03, .section05, footer {
+    .kv, .section02, .sec03-content, .section05, footer {
         padding-bottom: var(--padding-32);
     }
-    .section02, .section03, .section04, .section05, footer {
+    .section02, .sec03-content, .section04, .section05, footer {
         padding-top: var(--padding-32);
     }
     .kv{
@@ -496,14 +501,7 @@ header{
         padding-top: var(--padding-48);
         padding-bottom: var(--padding-36);
     }
-    .section-s{
-        padding-top: var(--padding-36);
-        padding-bottom: var(--padding-36);
-        .space-text{
-            font-size: var(--font-size-12);
-        }
-    }
-
+    
     .section02 {
         .tab_button{
             gap: var(--margin-4);
@@ -511,6 +509,15 @@ header{
         .tab_button-text{
             padding: var(--margin-4) var(--margin-6);
         }
-
+        
+    }
+    .section03 {
+        .sec03-space{
+            padding-top: var(--padding-36);
+            padding-bottom: var(--padding-36);
+            .space-text{
+                font-size: var(--font-size-12);
+            }
+        } 
     }
 }

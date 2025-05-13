@@ -49,6 +49,8 @@
             </div>
         </nav>
     </header>
+    <!-- header end -->
+    <!-- kv section -->
     <section class="kv">
         <div class="container">
             <div class="row">
@@ -446,7 +448,7 @@
                     </div>
                 </div>
                 <div class="col-md-7 col-12 d-flex flex-column justify-content-between">
-                    <div>
+                    <div class="sec03-title">
                         <div>
                             <h2>
                                 에일리<span><i class='bx bxs-heart'></i></span>최시훈 's pick
@@ -493,7 +495,7 @@
                         <div class="sec04_title">
                             <h2>WEDDING<br>VENUE</h2>
                         </div>
-                        <div class="sec04_title-img">
+                        <div class="ornament-img">
                             <img class="img-fluid" src="assets/images/flower-ornament01.png" alt="웨딩 플라워 일러스트">
                         </div>
                     </div>
@@ -628,7 +630,7 @@
                         <div class="sec06_title">
                             <h2>TUXEDO<br>& SUIT</h2>
                         </div>
-                        <div class="sec06_title-img">
+                        <div class="ornament-img">
                             <img class="img-fluid" src="assets/images/flower-ornament02.png" alt="웨딩 플라워 일러스트">
                         </div>
                     </div>
@@ -769,7 +771,7 @@
                         <div class="sec06_title">
                             <h2>WEDDING<br>CARD</h2>
                         </div>
-                        <div class="sec06_title-img">
+                        <div class="ornament-img">
                             <img class="img-fluid" src="assets/images/flower-ornament03.png" alt="웨딩 플라워 일러스트">
                         </div>
                     </div>
@@ -875,7 +877,15 @@
         $('.sec04-06_slide').slick({
             infinite: true,
             slidesToShow: 3,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                }
+            ]
         });
     </script>
 </body>

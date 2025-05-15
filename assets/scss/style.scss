@@ -113,9 +113,59 @@ header{
     .sec03-right_image{
         gap: var(--margin-24);
     }
-    .next-btn{
-        width: var(--font-size-38);
-        cursor: pointer;
+    .sec03_btn{
+        background-color: transparent;
+        border: none;
+        position: relative;
+        overflow: hidden;
+
+        span{
+            display: inline-block;
+            font-size: var(--font-size-14);
+            font-weight: var(--font-weight-400);
+            letter-spacing: var(--letter-spacing);
+            color: var(--disabled-color);
+            padding: var(--margin-8) var(--margin-10);
+            transition: all .5s ease-in-out;
+
+            &::before{
+                bottom: 0;
+                left: 0;
+                border-left: 2px solid var(--disabled-color);
+                border-bottom: 2px solid var(--disabled-color);
+            }
+            &::after{
+                bottom: 0;
+                right: 0;
+                border-right: 2px solid var(--disabled-color);
+                border-bottom: 2px solid var(--disabled-color);
+            }
+        }
+        &::before{
+            top: 0;
+            left: 0;
+            border-left: 2px solid var(--disabled-color);
+            border-top: 2px solid var(--disabled-color);
+        }
+        &::after{
+            top: 0;
+            right: 0;
+            border-right: 2px solid var(--disabled-color);
+            border-top: 2px solid var(--disabled-color);
+        }
+        &::before, &::after, span::before ,span::after{
+            content: "";
+            position: absolute;
+            width: 10%;
+            height: 25%;
+            transition: all .5s ease-in-out;
+            z-index: 2;
+        }
+        &:hover::before, &:hover::after, &:hover span::before, &:hover span::after{
+            width: 99%;
+            height: 98%;
+        }
+
     }
 }
 .sec04_title, .sec06_title {
@@ -172,11 +222,7 @@ footer {
 
 
 @media(max-width:1399.98px){
-    .section03 {
-        .next-btn{
-            width: var(--font-size-32);
-        }
-    }
+
 
 }
 
@@ -211,13 +257,19 @@ footer {
         }
     }
     .section03 {
-        .next-btn{
-            width: var(--font-size-24);
+    .sec03-right_image{
+        gap: var(--margin-24);
+    }
+    .sec03_btn{
+        span{
+            // letter-spacing: var(--letter-spacing);
+            padding: var(--margin-6) var(--margin-8);
         }
     }
     .sec04_title, .sec06_title {
         margin-bottom: var(--margin-14);
     }
+}
 }
 
 @media (max-width:767.98px){
@@ -300,9 +352,6 @@ footer {
     .section03 {
         .sec03-title{
             margin-bottom: var(--margin-24);
-        }
-        .next-btn{
-            width: var(--font-size-18);
         }
     }
 

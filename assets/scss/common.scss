@@ -37,6 +37,7 @@
     --font-size-8: .5rem;
 
     --letter-spacing: .06rem;
+    --letter-spacing_nav: .13rem;
 
     --primary-color: rgb(186, 74, 33);
     --secondary-scale01: rgb(254, 253, 253);
@@ -94,9 +95,11 @@
     --arrow-size: 2.75rem;
 }
 
-.w-33{
-    width: 33%;
-}
+ul{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+button{border: none; background: none; cursor: pointer;}
+
+.w-33{width: 33%;}
 
 h1, h2, h3 {
     font-family: var(--primary-font-type);
@@ -120,13 +123,6 @@ p, a, button {
     font-family: var(--secondary-font-type);
     line-height: 140%;
     margin: 0;
-}
-a, button {
-    cursor: pointer;
-}
-button{
-    border: none;
-    background: none;
 }
 
 .detail-title{
@@ -175,28 +171,11 @@ header, .section05 {
 
 
 header{
-    nav {
-        height: var(--padding-60);
-    }
-    .gnb-menu, .icon-navbar{
+    .gnb-menu{
         color: var(--secondary-scale01);
-    }
-    .nav-link.gnb-menu{
         font-size: var(--font-size-16);
         font-weight: var(--font-weight-400);
-        letter-spacing: var(--letter-spacing);
-        padding: var(--padding-tab-hover);
-    }
-    .nav-link.gnb-menu:hover{
-        color: var(--primary-color);
-        background-color: var(--secondary-scale01);
-        border-radius: var(--border-radius);
-        text-decoration: none;
-    }
-    .icon-navbar{
-        font-size: var(--font-size-24);
-        text-decoration: none;
-        cursor: pointer;
+        letter-spacing: var(--letter-spacing_nav);
     }
 }
 .kv{

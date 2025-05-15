@@ -16,36 +16,56 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-md">
-            <div class="container">
-                <a class="navbar-brand me-auto d-flex align-items-center" href="#">
-                    <img class="img-fluid" src="assets/images/iiDO_logo.png" alt="iiDO 로고 이미지">
-                </a>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link gnb-menu" href="#">Home</a>
+        <nav class="nav-bar w-100">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="navbar-logo">
+                    <img class="img-fluid" src="assets/images/iiDO_logo.png" alt="">
+                </div>
+                <div class="navbar-menu">
+                    <ul class="d-flex">
+                        <li>
+                            <a href="#" class="gnb-menu">
+                                HOME
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link gnb-menu" href="#">웨딩홀</a>
+                        <li>
+                            <a href="#" class="gnb-menu">
+                                웨딩홀
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link gnb-menu" href="#">스드메</a>
+                        <li>
+                            <a href="#" class="gnb-menu">
+                                스드메
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link gnb-menu" href="#">턱시도</a>
+                        <li>
+                            <a href="#" class="gnb-menu">
+                                턱시도
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link gnb-menu" href="#">청첩장</a>
+                        <li>
+                            <a href="#" class="gnb-menu">
+                                청첩장
+                            </a>
                         </li>
+                        <div class="navbar-social d-flex gap-3 d-md-none">
+                            <div>
+                                <img class="img-fluid" src="assets/images/contact-icon-home.png" alt=""></div>
+                            <div>
+                                <img class="img-fluid" src="assets/images/contact-icon-instagram.png" alt="">
+                            </div>
+                            <div>
+                                <img class="img-fluid" src="assets/images/contact-icon-twitter.png" alt="">
+                            </div>
+                        </div>
                     </ul>
                 </div>
-                <a class="ms-auto icon-navbar d-flex justify-content-center " href="#">
-                    <i class='bx bxs-user'></i>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class='bx bx-menu icon-navbar'></i>
-                </button>
+                <div class="navbar-toggle d-block d-md-none ms-auto">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </nav>
     </header>
@@ -847,11 +867,20 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
     <!-- bootstrap 5 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- jquery -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- slide -->
     <script>
+        $(document).ready(function(){
+            $('.navbar-toggle').click(function(){
+                $(this).toggleClass('open');
+                $('.navbar-menu').toggleClass('active');
+            });
+        });
+        
         $(document).ready(function(){
             $('.kv-slide').slick({
                 dots: false,

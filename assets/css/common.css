@@ -33,6 +33,7 @@
   --font-size-10: .63rem;
   --font-size-8: .5rem;
   --letter-spacing: .06rem;
+  --letter-spacing_nav: .13rem;
   --primary-color: rgb(186, 74, 33);
   --secondary-scale01: rgb(254, 253, 253);
   --secondary-scale02: rgb(248, 237, 233);
@@ -85,6 +86,22 @@
   --arrow-size: 2.75rem;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
 .w-33 {
   width: 33%;
 }
@@ -115,15 +132,6 @@ p, a, button {
   font-family: var(--secondary-font-type);
   line-height: 140%;
   margin: 0;
-}
-
-a, button {
-  cursor: pointer;
-}
-
-button {
-  border: none;
-  background: none;
 }
 
 .detail-title {
@@ -175,28 +183,11 @@ header, .section05 {
   margin-bottom: var(--margin-36);
 }
 
-header nav {
-  height: var(--padding-60);
-}
-header .gnb-menu, header .icon-navbar {
+header .gnb-menu {
   color: var(--secondary-scale01);
-}
-header .nav-link.gnb-menu {
   font-size: var(--font-size-16);
   font-weight: var(--font-weight-400);
-  letter-spacing: var(--letter-spacing);
-  padding: var(--padding-tab-hover);
-}
-header .nav-link.gnb-menu:hover {
-  color: var(--primary-color);
-  background-color: var(--secondary-scale01);
-  border-radius: var(--border-radius);
-  text-decoration: none;
-}
-header .icon-navbar {
-  font-size: var(--font-size-24);
-  text-decoration: none;
-  cursor: pointer;
+  letter-spacing: var(--letter-spacing_nav);
 }
 
 .kv {

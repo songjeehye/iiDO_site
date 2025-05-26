@@ -11,6 +11,7 @@
   --font-weight-200: 200;
   --font-size-62: 3.88rem;
   --font-size-58: 3.63rem;
+  --font-size-56: 3.5rem;
   --font-size-54: 3.38rem;
   --font-size-46: 2.88rem;
   --font-size-44: 2.75rem;
@@ -41,6 +42,8 @@
   --font-scale01: rgb(112, 44, 20);
   --font-scale02: rgb(140, 119, 112);
   --font-scale03: rgb(211, 179, 167);
+  --gray-scale01: rgb(34, 34, 34);
+  --gray-scale02: rgba(34, 34, 34, .02);
   --padding-120: 7.5rem;
   --padding-104: 6.5rem;
   --padding-100: 6.25rem;
@@ -55,6 +58,7 @@
   --padding-52: 3.25rem;
   --padding-50: 3.13rem;
   --padding-48: 2.75rem;
+  --padding-45: 2.81rem;
   --padding-44: 2.75rem;
   --padding-42: 2.63rem;
   --padding-40: 2.5rem;
@@ -84,6 +88,10 @@
   --margin-2: .13rem;
   --border-radius: 2px;
   --arrow-size: 2.75rem;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -256,6 +264,20 @@ header .gnb-menu {
 .section06 {
   padding-top: var(--padding-104);
   padding-bottom: var(--padding-120);
+}
+
+.subpage-title {
+  font-size: var(--font-size-56);
+  font-weight: var(--font-weight-500);
+  letter-spacing: var(--letter-spacing_nav);
+  color: var(--gray-scale01);
+}
+
+.subpage-subtitle {
+  font-size: var(--font-size-26);
+  font-weight: var(--font-weight-400);
+  letter-spacing: var(--letter-spacing);
+  color: var(--gray-scale01);
 }
 
 @media (max-width: 1399.98px) {

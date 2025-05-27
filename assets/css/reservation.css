@@ -629,6 +629,8 @@ header nav .navbar-toggle.open span:nth-child(4) {
   margin: 0 var(--margin-28) 0 var(--margin-28);
   padding: var(--padding-32) 0 var(--padding-30);
   border-radius: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 .sub01-section03 .tab-icon p {
   font-size: var(--font-size-16);
@@ -637,11 +639,20 @@ header nav .navbar-toggle.open span:nth-child(4) {
   color: var(--gray-scale01);
   margin-top: var(--margin-6);
 }
-.sub01-section03 .tab-icon:hover {
+.sub01-section03 .tab-icon:hover, .sub01-section03 .tab-icon.active {
   background-color: var(--gray-scale01);
 }
-.sub01-section03 .tab-icon:hover p {
+.sub01-section03 .tab-icon:hover img, .sub01-section03 .tab-icon.active img {
+  filter: invert(99%) sepia(100%) saturate(1%) hue-rotate(287deg) brightness(103%) contrast(99%);
+}
+.sub01-section03 .tab-icon:hover p, .sub01-section03 .tab-icon.active p {
   color: var(--secondary-scale01);
+}
+.sub01-section03 .tab-content {
+  display: none;
+}
+.sub01-section03 .tab-content.on {
+  display: block;
 }
 .sub01-section03 .tab-content .row {
   row-gap: var(--margin-24);

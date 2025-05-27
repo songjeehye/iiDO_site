@@ -140,6 +140,8 @@ header{
         margin: 0 var(--margin-28) 0 var(--margin-28);
         padding: var(--padding-32) 0 var(--padding-30);
         border-radius: 100%;
+        transition: all .5s;
+        cursor: pointer;
         p{
             font-size: var(--font-size-16);
             font-weight: var(--font-weight-400);
@@ -147,14 +149,21 @@ header{
             color: var(--gray-scale01);
             margin-top: var(--margin-6);
         }
-        &:hover{
+        &:hover, &.active{
             background-color: var(--gray-scale01);
+            img{
+                filter: invert(99%) sepia(100%) saturate(1%) hue-rotate(287deg) brightness(103%) contrast(99%);
+            }
             p{
                 color: var(--secondary-scale01);
             }
         }
     }
     .tab-content{
+        display: none;
+        &.on{
+            display: block;
+        }
         .row{
             row-gap: var(--margin-24);
         }

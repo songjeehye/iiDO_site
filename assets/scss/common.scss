@@ -88,6 +88,7 @@
     --margin-18: 1.13rem;
     --margin-16: 1rem;
     --margin-14: .88rem;
+    --margin-13: .81rem;
     --margin-12: .75rem;
     --margin-10: .63rem;
     --margin-8: .5rem;
@@ -366,6 +367,14 @@ header{
         }
     }
     
+
+    // subpage
+    .subpage-title{
+        font-size: var(--font-size-52);
+    }
+    .subpage-subtitle{
+        font-size: var(--font-size-24);
+    }
 }
 
 @media (max-width: 991.98px){
@@ -425,6 +434,14 @@ header{
         }
     }
 
+    // subpage
+    .subpage-title{
+        font-size: var(--font-size-46);
+    }
+    .subpage-subtitle{
+        font-size: var(--font-size-22);
+    }
+
 }
 
 @media(max-width:767.98px){
@@ -465,6 +482,14 @@ header{
                 font-size: var(--font-size-16);
             }
         }
+    }
+
+    // subpage
+    .subpage-title{
+        font-size: var(--font-size-42);
+    }
+    .subpage-subtitle{
+        font-size: var(--font-size-20);
     }
     
 }
@@ -518,5 +543,10 @@ header{
                 font-size: var(--font-size-12);
             }
         } 
+    }
+
+    // subpage
+    .subpage-title{
+        font-size: var(--font-size-36);
     }
 }

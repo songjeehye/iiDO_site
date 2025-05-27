@@ -162,6 +162,10 @@ header{
         }
     }
     .tab-content{
+        display: none;
+        &.active{
+            display: block;
+        }
         .row{
             row-gap: var(--margin-24);
         }

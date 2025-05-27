@@ -672,6 +672,12 @@ header nav .navbar-toggle.open span:nth-child(4) {
 .sub01-section03 .tab-icon:hover p, .sub01-section03 .tab-icon.active p {
   color: var(--secondary-scale01);
 }
+.sub01-section03 .tab-content {
+  display: none;
+}
+.sub01-section03 .tab-content.active {
+  display: block;
+}
 .sub01-section03 .tab-content .row {
   row-gap: var(--margin-24);
 }

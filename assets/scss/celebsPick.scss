@@ -132,28 +132,59 @@ header{
     overflow: hidden;
 }
 
-.pick-text{
+.pick-bg_text{
     position: absolute;
     bottom: -100px;
+    left: 95px;
     transition: all 0.4s;
 }
 
-.pick-list:hover .pick-text{
-    bottom: 0;
+.pick-list:hover .pick-bg_text{
+    bottom: 158.5px;
+    left: 95px;
 }
 .pick-bg{
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.3);
+    background: rgba(34, 34, 34, .8);
+    backdrop-filter: blur(2px);
     border-radius: 20px;
     top: 0;
     opacity: 0;
-    transition: all 0.5s;
+    transition: all 0.5s ease-in-out;
 }
 
 .pick-list:hover .pick-bg{
     opacity: 1;
+}
+
+
+
+.product-info_tag{
+    padding: var(--margin-4) var(--margin-10);
+    border-radius: 20px;
+    font-size: var(--font-size-12);
+    font-weight: var(--font-weight-400);
+    color: var(--secondary-scale01);
+    &.hashtag02{
+        background-color: var(--primary-color);
+    }
+    margin-bottom: var(--margin-14);
+}
+.pick-bg_text{
+    .product-info_price{
+        font-size: var(--font-size-18);
+        font-weight: var(--font-weight-500);
+        letter-spacing: var(--letter-spacing);
+        color: var(--secondary-scale01);
+    }
+    .product-info_title{
+        font-size: var(--font-size-18);
+        font-weight: var(--font-weight-400);
+        color: var(--secondary-scale01);
+        margin-bottom: var(--margin-2);
+    }
 }
 
 

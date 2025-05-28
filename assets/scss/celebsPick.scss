@@ -131,19 +131,25 @@ header{
     position: relative;
     overflow: hidden;
 }
-
 .pick-bg_text{
     position: absolute;
-    bottom: -100px;
-    left: 95px;
     transition: all 0.4s;
+    bottom: -40%;
+}
+.product-info_tag{
+    /*width: 70%;*/
+    margin: auto;
 }
 
 .pick-list:hover .pick-bg_text{
-    bottom: 158.5px;
-    left: 95px;
+    bottom: 40%;
 }
 .pick-bg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;    
     position: absolute;
     width: 100%;
     height: 100%;
@@ -160,7 +166,9 @@ header{
 }
 
 
-
+.test{
+    font-size: 24px;
+}
 .product-info_tag{
     padding: var(--margin-4) var(--margin-10);
     border-radius: 20px;

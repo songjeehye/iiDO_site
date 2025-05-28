@@ -642,17 +642,25 @@ header nav .navbar-toggle.open span:nth-child(4) {
 
 .pick-bg_text {
   position: absolute;
-  bottom: -100px;
-  left: 95px;
   transition: all 0.4s;
+  bottom: -40%;
+}
+
+.product-info_tag {
+  /*width: 70%;*/
+  margin: auto;
 }
 
 .pick-list:hover .pick-bg_text {
-  bottom: 158.5px;
-  left: 95px;
+  bottom: 40%;
 }
 
 .pick-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -666,6 +674,10 @@ header nav .navbar-toggle.open span:nth-child(4) {
 
 .pick-list:hover .pick-bg {
   opacity: 1;
+}
+
+.test {
+  font-size: 24px;
 }
 
 .product-info_tag {

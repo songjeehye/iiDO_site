@@ -131,7 +131,7 @@ header{
     position: relative;
     overflow: hidden;
 }
-.pick-bg_text{
+.pick-bg_text01, .pick-bg_text02{
     position: absolute;
     transition: all 0.4s;
     bottom: -40%;
@@ -141,8 +141,11 @@ header{
     margin: auto;
 }
 
-.pick-list:hover .pick-bg_text{
+.pick-list:hover .pick-bg_text01{
     bottom: 40%;
+}
+.pick-list:hover .pick-bg_text02{
+    bottom: 30%;
 }
 .pick-bg{
     display: flex;
@@ -180,7 +183,7 @@ header{
     }
     margin-bottom: var(--margin-14);
 }
-.pick-bg_text{
+.pick-bg_text01, .pick-bg_text02{
     .product-info_price{
         font-size: var(--font-size-18);
         font-weight: var(--font-weight-500);

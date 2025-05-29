@@ -640,7 +640,7 @@ header nav .navbar-toggle.open span:nth-child(4) {
   overflow: hidden;
 }
 
-.pick-bg_text {
+.pick-bg_text01, .pick-bg_text02 {
   position: absolute;
   transition: all 0.4s;
   bottom: -40%;
@@ -651,8 +651,12 @@ header nav .navbar-toggle.open span:nth-child(4) {
   margin: auto;
 }
 
-.pick-list:hover .pick-bg_text {
+.pick-list:hover .pick-bg_text01 {
   bottom: 40%;
+}
+
+.pick-list:hover .pick-bg_text02 {
+  bottom: 30%;
 }
 
 .pick-bg {
@@ -692,13 +696,13 @@ header nav .navbar-toggle.open span:nth-child(4) {
   background-color: var(--primary-color);
 }
 
-.pick-bg_text .product-info_price {
+.pick-bg_text01 .product-info_price, .pick-bg_text02 .product-info_price {
   font-size: var(--font-size-18);
   font-weight: var(--font-weight-500);
   letter-spacing: var(--letter-spacing);
   color: var(--secondary-scale01);
 }
-.pick-bg_text .product-info_title {
+.pick-bg_text01 .product-info_title, .pick-bg_text02 .product-info_title {
   font-size: var(--font-size-18);
   font-weight: var(--font-weight-400);
   color: var(--secondary-scale01);

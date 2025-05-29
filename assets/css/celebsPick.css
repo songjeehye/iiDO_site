@@ -635,6 +635,10 @@ header nav .navbar-toggle.open span:nth-child(4) {
   margin-bottom: var(--padding-42);
 }
 
+.sec03-gallery_content {
+  row-gap: var(--margin-24);
+}
+
 .pick-list {
   position: relative;
   overflow: hidden;

@@ -678,4 +678,16 @@ footer .footer-content_bottom .content-bottom__icon img {
   .subpage-title {
     font-size: var(--font-size-36);
   }
-}/*# sourceMappingURL=common.css.map */
+}
+.sub-kv {
+  padding-top: var(--padding-120);
+  padding-bottom: var(--padding-76);
+}
+
+.sub03-section02 {
+  padding-top: var(--padding-76);
+  padding-bottom: var(--padding-76);
+}
+.sub03-section02 .sec02-title {
+  margin-bottom: var(--padding-42);
+}/*# sourceMappingURL=gallery.css.map */

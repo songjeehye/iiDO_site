@@ -1,0 +1,15 @@
+@import 'common.scss';
+
+.sub-kv{
+    padding-top: var(--padding-120);
+    padding-bottom: var(--padding-76);
+}
+
+.sub03-section02{
+    padding-top: var(--padding-76);
+    padding-bottom: var(--padding-76);
+
+    .sec02-title{
+        margin-bottom: var(--padding-42);
+    }
+}

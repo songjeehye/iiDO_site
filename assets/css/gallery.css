@@ -6,6 +6,7 @@
   --secondary-font-type: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --space-font-type: "Monsieur La Doulaise", cursive;
   --font-weight-800: 800;
+  --font-weight-600: 600;
   --font-weight-500: 500;
   --font-weight-400: 400;
   --font-weight-200: 200;
@@ -13,6 +14,8 @@
   --font-size-58: 3.63rem;
   --font-size-56: 3.5rem;
   --font-size-54: 3.38rem;
+  --font-size-52: 3.25rem;
+  --font-size-48: 3rem;
   --font-size-46: 2.88rem;
   --font-size-44: 2.75rem;
   --font-size-42: 2.63rem;
@@ -396,6 +399,13 @@ footer .footer-content_bottom .content-bottom__icon img {
   color: var(--gray-scale01);
 }
 
+.subpage-quote {
+  font-family: var(--primary-font-type);
+  font-size: var(--font-size-36);
+  font-weight: var(--font-weight-800);
+  color: var(--primary-color);
+}
+
 @media (max-width: 1399.98px) {
   h1 {
     font-size: var(--font-size-58);
@@ -686,8 +696,28 @@ footer .footer-content_bottom .content-bottom__icon img {
 
 .sub03-section02 {
   padding-top: var(--padding-76);
-  padding-bottom: var(--padding-76);
+  padding-bottom: var(--padding-120);
 }
 .sub03-section02 .sec02-title {
   margin-bottom: var(--padding-42);
+}
+.sub03-section02 img {
+  transition: all 0.5s ease-in-out;
+}
+.sub03-section02 .sec02-gallery:hover img {
+  filter: grayscale(1);
+}
+.sub03-section02 .sec02-gallery:hover img:hover {
+  filter: grayscale(0);
+}
+.sub03-section02 .slick-dots {
+  position: static;
+  margin-top: var(--margin-24);
+}
+.sub03-section02 .slick-dots li button:before {
+  font-size: var(--font-size-12);
+  color: var(--font-scale03);
+}
+.sub03-section02 .slick-dots li.slick-active button:before {
+  color: var(--primary-color);
 }/*# sourceMappingURL=gallery.css.map */

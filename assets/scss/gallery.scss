@@ -7,9 +7,33 @@
 
 .sub03-section02{
     padding-top: var(--padding-76);
-    padding-bottom: var(--padding-76);
+    padding-bottom: var(--padding-120);
 
     .sec02-title{
         margin-bottom: var(--padding-42);
+    }
+    img{
+        transition: all .5s ease-in-out;
+    }
+
+    .sec02-gallery:hover {
+        img{
+            filter: grayscale(1);
+            &:hover{
+                filter: grayscale(0);
+            }
+        }
+    }
+
+    .slick-dots{
+        position: static;
+        margin-top: var(--margin-24);
+    }
+    .slick-dots li button:before{
+        font-size: var(--font-size-12);
+        color: var(--font-scale03);
+    }
+    .slick-dots li.slick-active button:before{
+        color: var(--primary-color);
     }
 }

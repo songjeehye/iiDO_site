@@ -770,4 +770,19 @@ footer .footer-content_bottom .content-bottom__icon img {
 }
 .sub05-section04 .content-product_title {
   margin-top: var(--margin-18);
+}
+
+.sub05-section05 {
+  padding-top: var(--padding-104);
+  padding-bottom: var(--padding-120);
+}
+.sub05-section05 .sec05-box {
+  border: 1px solid var(--disabled-color);
+  border-radius: 20px;
+}
+.sub05-section05 .sec05-box .sec05-box_content {
+  margin-left: 15%;
+}
+.sub05-section05 .box_content_bottom {
+  margin-top: var(--margin-32);
 }/*# sourceMappingURL=product.css.map */

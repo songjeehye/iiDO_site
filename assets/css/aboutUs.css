@@ -1,5 +1,4 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Nanum+Myeongjo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Monsieur+La+Doulaise&family=Nanum+Myeongjo&display=swap");
 :root {
   --primary-font-type: "Nanum Myeongjo", serif;
@@ -705,7 +704,6 @@ footer .footer-content_bottom .content-bottom__icon img {
 
 .sub04-section03 {
   position: relative;
-  height: 100vh;
 }
 .sub04-section03 .subpage-title {
   font-size: var(--font-size-42);
@@ -717,32 +715,10 @@ footer .footer-content_bottom .content-bottom__icon img {
   color: var(--secondary-scale01);
 }
 
-.slide_contents {
-  position: relative;
-  height: 100%;
-}
-.slide_contents .slide_content_01 {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: 1;
-  opacity: 1;
-  visibility: visible;
-}
-.slide_contents .slide_content_02, .slide_contents .slide_content_03 {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 2;
-}
-.slide_contents .content__details {
+.content__details {
   position: relative;
 }
-.slide_contents .content__details .details_bg {
+.content__details .details_bg {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -757,6 +733,9 @@ footer .footer-content_bottom .content-bottom__icon img {
   height: 100%;
   padding-top: var(--padding-76);
   padding-bottom: var(--padding-120);
+}
+.sub04-section04 .about_Sec04Details:not(:last-child) {
+  margin-bottom: var(--margin-48);
 }
 .sub04-section04 .sec04-title {
   font-size: var(--font-size-42);

@@ -183,41 +183,131 @@ header{
         margin-top: var(--margin-12);
     }
 }
-footer {
-    background-color: var(--primary-color);
-    .row{
-        gap: var(--margin-24);
+
+
+
+
+    .subpage-subtitle{
+        margin-bottom: var(--padding-42);
     }
-    .footer-content__text{
-        font-size: var(--font-size-14);
-        font-weight: var(--font-weight-200);
-        letter-spacing: var(--letter-spacing);
-        color: var(--font-scale03);
+    .product-info_title{
+        font-size: var(--font-size-18);
+        font-weight: var(--font-weight-400);
+        color: var(--gray-scale01);
     }
-    .footer-content_top{
-        column-gap: var(--margin-24);
-        row-gap: var(--margin-8);
-        margin-top: var(--margin-20);
-        span {
-            font-weight: var(--font-weight-400);
-        }
+
+    .tab-list{
+        margin-bottom: var(--padding-42);
     }
-    .footer-content_bottom {
-        .content_bottom__title {
-            font-size: var(--font-size-26);
+    .tab-icon{
+        width: 8.75rem;
+        height: 8.75rem;
+        background-color: var(--gray-scale02);
+        border-radius: 100%;
+        padding-top: var(--padding-32);
+        padding-bottom: var(--padding-30);
+        transition: all .5s;
+        cursor: pointer;
+        p{
+            font-size: var(--font-size-16);
             font-weight: var(--font-weight-400);
             letter-spacing: var(--letter-spacing);
-            color: var(--secondary-scale02);
+            color: var(--gray-scale01);
+            margin-top: var(--margin-6);
         }
-        .content-bottom__icon {
-            margin-top: var(--margin-18);
-            gap: var(--margin-12);
-            img {
-                cursor: pointer;
+        &:hover, &.active{
+            background-color: var(--gray-scale01);
+            img{
+                filter: invert(99%) sepia(100%) saturate(1%) hue-rotate(287deg) brightness(103%) contrast(99%);
+            }
+            p{
+                color: var(--secondary-scale01);
             }
         }
     }
-}
+    .tab-content{
+        display: none;
+        &.active{
+            display: block;
+        }
+        .row{
+            row-gap: var(--margin-24);
+        }
+        .row:not(:first-child, :last-child){
+            margin-bottom: var(--margin-24);
+        }
+    }
+
+    .product-content{
+        margin-left: var(--margin-12);
+        gap: var(--margin-8);
+        .product-info_tag{
+            padding: var(--margin-4) var(--margin-10);
+            border-radius: 20px;
+            font-size: var(--font-size-12);
+            font-weight: var(--font-weight-400);
+            color: var(--secondary-scale01);
+            &.hashtag01{
+                background-color: var(--font-scale03);
+            }
+            &.hashtag02{
+                background-color: var(--primary-color);
+            }
+        }
+    }
+    .product-info{
+        padding-left: var(--margin-12);
+        p:last-child{
+            font-size: var(--font-size-18);
+            font-weight: var(--font-weight-500);
+            letter-spacing: var(--letter-spacing);
+            color: var(--gray-scale01);
+        }
+        .product-info_title{
+            margin-top: var(--margin-14);
+            margin-bottom: var(--margin-2);
+        }
+    }
+
+
+    .sec03-title{
+        margin-bottom: var(--margin-24);
+        span{
+            font-family: var(--secondary-font-type);
+            font-size: var(--font-size-32);
+            margin: 0 var(--margin-2);
+        }
+    }
+    .sec03_pick-content{
+        .product-info_title{
+            margin-top: var(--margin-8);
+            margin-left: var(--margin-12);
+        }
+    }
+    .product-main-title{
+        font-size: var(--font-size-38);
+        letter-spacing: var(--letter-spacing);
+        color: var(--gray-scale01);
+        margin-bottom: var(--margin-32);
+    }
+    .section04{
+        background: url('../images/flower-ornament_bg01.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        padding-top: 160px;
+        padding-bottom: 76px;
+    }
+    .section05{
+        padding: 32px 0;
+    }
+    .section06{
+        background: url('../images/flower-ornament_bg02.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        padding-top: 76px;
+        padding-bottom: 160px;
+    }
+
 
 
 
@@ -227,11 +317,6 @@ footer {
 }
 
 @media(max-width:1199.98px){
-    footer {
-        .footer-content_top{
-            column-gap: var(--margin-16);
-        }
-    }
     .ornament-img {
         width: 80%;
     }
@@ -337,14 +422,6 @@ footer {
     }
     .sec04_title, .sec06_title {
         margin-bottom: var(--margin-10);
-    }
-    footer {
-        .footer-content_logo{
-            text-align: center;
-        }
-        .footer-content_top{
-            justify-content: center;
-        }
     }
 }
 

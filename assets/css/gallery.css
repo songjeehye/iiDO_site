@@ -46,6 +46,7 @@
   --font-scale03: rgb(211, 179, 167);
   --gray-scale01: rgb(34, 34, 34);
   --gray-scale02: rgba(34, 34, 34, .02);
+  --gray-scale03: rgb(233, 233, 233);
   --padding-120: 7.5rem;
   --padding-104: 6.5rem;
   --padding-100: 6.25rem;
@@ -95,6 +96,10 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--secondary-scale01);
 }
 
 ul {
@@ -163,21 +168,13 @@ p, a, button {
 }
 
 .img_border {
-  border: 0.5px solid var(--disabled-color);
+  border: 2px solid var(--gray-scale02);
   border-radius: var(--border-radius);
 }
 
-header, .section05 {
+header {
   background-color: var(--primary-color);
   color: var(--secondary-scale01);
-}
-
-.kv, .section02 {
-  background-color: var(--secondary-scale02);
-}
-
-.section04, .section06 {
-  background-color: var(--secondary-scale01);
 }
 
 .kv, .section02, .sec03-content, .section05, .section06-middle, footer {
@@ -308,9 +305,6 @@ header nav .navbar-toggle.open span:nth-child(4) {
   border-radius: var(--border-radius);
 }
 
-.section03 {
-  background: linear-gradient(var(--secondary-scale02), var(--secondary-scale01));
-}
 .section03 h2 {
   margin-bottom: var(--margin-24);
 }
@@ -338,29 +332,25 @@ header nav .navbar-toggle.open span:nth-child(4) {
   padding-bottom: var(--padding-104);
 }
 
-.section05 h2, .section05 .detail-title {
-  color: var(--secondary-scale01);
-}
-.section05 .detail-info {
-  color: var(--font-scale03);
-}
-
 .section06 {
   padding-top: var(--padding-104);
   padding-bottom: var(--padding-120);
 }
 
 footer {
-  background-color: var(--primary-color);
+  background-color: var(--gray-scale03);
+  color: var(--gray-scale01);
 }
 footer .row {
   gap: var(--margin-24);
+}
+footer .footer-content_logo img {
+  filter: invert(99%) sepia(100%) saturate(1%) hue-rotate(287deg) brightness(103%) contrast(99%);
 }
 footer .footer-content__text {
   font-size: var(--font-size-14);
   font-weight: var(--font-weight-200);
   letter-spacing: var(--letter-spacing);
-  color: var(--font-scale03);
 }
 footer .footer-content_top {
   column-gap: var(--margin-24);
@@ -374,7 +364,6 @@ footer .footer-content_bottom .content_bottom__title {
   font-size: var(--font-size-26);
   font-weight: var(--font-weight-400);
   letter-spacing: var(--letter-spacing);
-  color: var(--secondary-scale02);
 }
 footer .footer-content_bottom .content-bottom__icon {
   margin-top: var(--margin-18);

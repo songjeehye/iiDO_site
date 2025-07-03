@@ -1,23 +1,81 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://iido.netlify.app/">
+
+    <!-- Basic SEO Meta Tags -->
+    <meta name="title" content="ii DO - 결혼 준비의 모든 것">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="ii DO는 웨딩홀, 스드메, 청첩장, 패키지 등 결혼 준비의 모든 것을 한 곳에서 비교하고 예약할 수 있는 웨딩 플랫폼입니다.">
+    <meta name="keywords" content="웨딩, 결혼준비, 웨딩홀, 스드메, 웨딩패키지, 청첩장, 웨딩플랫폼, ii DO">
+
+    <!-- Facebook Open Graph Tags -->
+    <meta property="og:url" content="https://iido.netlify.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ii DO" />
+    <meta property="og:title" content="ii DO - 결혼 준비의 모든 것" />
+    <meta property="og:description" content="ii DO는 웨딩홀, 스드메, 청첩장, 패키지 등 결혼 준비의 모든 것을 한 곳에서 비교하고 예약할 수 있는 웨딩 플랫폼입니다." />
+    <meta property="og:image" content="https://iido.netlify.app/og-image.jpg" />
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ii DO - 결혼 준비의 모든 것" />
+    <meta name="twitter:description"
+        content="ii DO는 웨딩홀, 스드메, 청첩장, 패키지 등 결혼 준비의 모든 것을 한 곳에서 비교하고 예약할 수 있는 웨딩 플랫폼입니다." />
+    <meta name="twitter:image" content="https://iido.netlify.app/og-image.jpg" />
+
+    <!-- Title -->
     <title>ii DO</title>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    <!-- slide -->
+
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="tGA1sSlsJM9qQpgsZU3PZjH0TjxSzWrtMWzBHLwGi2g" />
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-N2NZRXHZ');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <!-- Bootstrap 5 CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
-    <!-- bootstrap 5 -->
+
+    <!-- Custom Style -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- style -->
 </head>
+
 <body>
+    <ul style="display: none;">
+        <li><a href="https://section.blog.naver.com/">네이버 블로그</a></li>
+        <li><a href="https://www.instagram.com/">인스타그램</a></li>
+        <li><a href="https://x.com/">트위터</a></li>
+        <li><a href="https://www.facebook.com/">페이스북</a></li>
+        <li><a href="https://kr.pinterest.com/">핀터레스트</a></li>
+    </ul>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N2NZRXHZ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
     <header>
         <nav class="nav-bar w-100">
             <div class="container d-flex justify-content-between align-items-center">
                 <a href="#" class="navbar-logo">
-                    <img class="img-fluid" src="assets/images/iiDO_logo.png" alt="로고 이미지">
+                    <img class="img-fluid" src="assets/images/iiDO_logo.svg" alt="로고 이미지">
                 </a>
                 <div class="navbar-menu">
                     <ul class="d-flex">
@@ -43,7 +101,8 @@
                         </li>
                         <div class="navbar-social d-flex gap-3 d-md-none">
                             <div>
-                                <img class="img-fluid" src="assets/images/contact-icon-home.png" alt="홈 아이콘"></div>
+                                <img class="img-fluid" src="assets/images/contact-icon-home.png" alt="홈 아이콘">
+                            </div>
                             <div>
                                 <img class="img-fluid" src="assets/images/contact-icon-instagram.png" alt="인스타그램 아이콘">
                             </div>
@@ -63,743 +122,1040 @@
         </nav>
     </header>
     <!-- header end -->
-    <!-- kv section -->
-    <section class="kv">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="kv-slide">
-                        <div class="kv-slide_content">
-                            <div class="text-center slide_title">
-                                <h1>
-                                    VILLA DE GD SUSEO
-                                </h1>
-                                <h2>
-                                    빌라 드 지디 수서점, 2026년 예약 오픈 
-                                </h2>
-                            </div>
-                            <div class="slide_image-lg">
-                                <div class="w-33">
-                                    <img class="img_border img-fluid" src="assets/images/kv-villadegd-left.png" alt="빌라 드 지디 수서점 배너 이미지">
+
+    <main>
+        <!-- kv section -->
+        <section class="kv">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="kv-slide">
+                            <div class="kv-slide_content">
+                                <div class="text-center slide_title">
+                                    <h1>
+                                        VILLA DE GD SUSEO
+                                    </h1>
+                                    <h2>
+                                        빌라 드 지디 수서점, 2026년 예약 오픈
+                                    </h2>
                                 </div>
-                                <div class="w-33">
-                                    <img class="img_border img-fluid" src="assets/images/kv-villadegd-center.png" alt="빌라 드 지디 수서점 배너 이미지">
+                                <div class="slide_image-lg">
+                                    <div class="w-33">
+                                        <img class="img_border img-fluid" src="assets/images/kv-villadegd-left.png"
+                                            alt="빌라 드 지디 수서점 배너 이미지">
+                                    </div>
+                                    <div class="w-33">
+                                        <img class="img_border img-fluid" src="assets/images/kv-villadegd-center.png"
+                                            alt="빌라 드 지디 수서점 배너 이미지">
+                                    </div>
+                                    <div class="w-33">
+                                        <img class="img_border img-fluid" src="assets/images/kv-villadegd-right.png"
+                                            alt="빌라 드 지디 수서점 배너 이미지">
+                                    </div>
                                 </div>
-                                <div class="w-33">
-                                    <img class="img_border img-fluid" src="assets/images/kv-villadegd-right.png" alt="빌라 드 지디 수서점 배너 이미지">
-                                </div>
-                            </div>
-                            <div class="slide_image-md">
-                                <img class="img_border img-fluid" src="assets/images/kv-villadegd-tamo.png" alt="빌라 드 지디 수서점 배너 이미지">
-                            </div>
-                        </div>
-                        <div class="kv-slide_content">
-                            <div class="text-center slide_title">
-                                <h1>
-                                    TOTAL SUDIO “ROI”
-                                </h1>
-                                <h2>
-                                    로이 스튜디오, 스드메 패키지 할인 
-                                </h2>
-                            </div>
-                            <div class="slide_image-lg">
-                                <div class="w-33">
-                                    <img class="img_border img-fluid" src="assets/images/kv-roistudio-left.png" alt="로이 스튜디오 배너 이미지">
-                                </div>
-                                <div class="w-33">
-                                    <img class="img_border img-fluid" src="assets/images/kv-roistudio-center.png" alt="로이 스튜디오 배너 이미지">
-                                </div>
-                                <div class="w-33">
-                                    <img class="img_border img-fluid" src="assets/images/kv-roistudio-right.png" alt="로이 스튜디오 배너 이미지">
+                                <div class="slide_image-md">
+                                    <img class="img_border img-fluid" src="assets/images/kv-villadegd-tamo.png"
+                                        alt="빌라 드 지디 수서점 배너 이미지">
                                 </div>
                             </div>
-                            <div class="slide_image-md">
-                                <img class="img_border img-fluid" src="assets/images/kv-roistudio-center.png" alt="로이 스튜디오 배너 이미지">
-                            </div>                            
-                        </div>
-                        <div class="kv-slide_content">
-                            <div class="text-center slide_title">
-                                <h1>
-                                    BRIDAL KONG F/W
-                                </h1>
-                                <h2>
-                                    브라이덜공 2025 F/W 컬렉션 공개 
-                                </h2>
+                            <div class="kv-slide_content">
+                                <div class="text-center slide_title">
+                                    <h1>
+                                        TOTAL SUDIO “ROI”
+                                    </h1>
+                                    <h2>
+                                        로이 스튜디오, 스드메 패키지 할인
+                                    </h2>
+                                </div>
+                                <div class="slide_image-lg">
+                                    <div class="w-33">
+                                        <img class="img_border img-fluid" src="assets/images/kv-roistudio-left.png"
+                                            alt="로이 스튜디오 배너 이미지">
+                                    </div>
+                                    <div class="w-33">
+                                        <img class="img_border img-fluid" src="assets/images/kv-roistudio-center.png"
+                                            alt="로이 스튜디오 배너 이미지">
+                                    </div>
+                                    <div class="w-33">
+                                        <img class="img_border img-fluid" src="assets/images/kv-roistudio-right.png"
+                                            alt="로이 스튜디오 배너 이미지">
+                                    </div>
+                                </div>
+                                <div class="slide_image-md">
+                                    <img class="img_border img-fluid" src="assets/images/kv-roistudio-center.png"
+                                        alt="로이 스튜디오 배너 이미지">
+                                </div>
                             </div>
-                            <div class="slide_image-lg">
-                                <div class="w-33">
-                                    <img class="img_border img-fluid" src="assets/images/kv-bridalkong-left.png" alt="브라이덜공 드레스 배너 이미지">
+                            <div class="kv-slide_content">
+                                <div class="text-center slide_title">
+                                    <h1>
+                                        BRIDAL KONG F/W
+                                    </h1>
+                                    <h2>
+                                        브라이덜공 2025 F/W 컬렉션 공개
+                                    </h2>
                                 </div>
-                                <div class="w-33">
-                                    <img class="img_border img-fluid" src="assets/images/kv-bridalkong-center.png" alt="브라이덜공 드레스 배너 이미지">
+                                <div class="slide_image-lg">
+                                    <div class="w-33">
+                                        <img class="img_border img-fluid" src="assets/images/kv-bridalkong-left.png"
+                                            alt="브라이덜공 드레스 배너 이미지">
+                                    </div>
+                                    <div class="w-33">
+                                        <img class="img_border img-fluid" src="assets/images/kv-bridalkong-center.png"
+                                            alt="브라이덜공 드레스 배너 이미지">
+                                    </div>
+                                    <div class="w-33">
+                                        <img class="img_border img-fluid" src="assets/images/kv-bridalkong-right.png"
+                                            alt="브라이덜공 드레스 배너 이미지">
+                                    </div>
                                 </div>
-                                <div class="w-33">
-                                    <img class="img_border img-fluid" src="assets/images/kv-bridalkong-right.png" alt="브라이덜공 드레스 배너 이미지">
+                                <div class="slide_image-md">
+                                    <img class="img_border img-fluid" src="assets/images/kv-bridalkong-right.png"
+                                        alt="브라이덜공 드레스 배너 이미지">
                                 </div>
                             </div>
-                            <div class="slide_image-md">
-                                <img class="img_border img-fluid" src="assets/images/kv-bridalkong-right.png" alt="브라이덜공 드레스 배너 이미지">
-                            </div>                              
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- kv section end -->
-    <!-- section02 -->
-    <section class="section02">
-        <div class="container">
-            <div class="row title-image_margin">
-                <div class="col-md-12">
-                    <h3 class="tab_title">지금 인기 있어요</h3>
-                    <ul class="nav nav-pills tab_button" id="pills-tab" role="tablist">
-                        <li class="nav-item d-flex align-items-center" role="presentation">
-                            <button class="tab_button-text detail-title active" id="pills-tab01" data-bs-toggle="pill" data-bs-target="#pills-hall" type="button" role="tab" aria-controls="pills-hall" aria-selected="true">
-                                웨딩홀
-                            </button>
-                        </li>
-                        <li class="nav-item d-flex align-items-center" role="presentation">
-                            <button class="tab_button-text detail-title" id="pills-tab02" data-bs-toggle="pill" data-bs-target="#pills-studio" type="button" role="tab" aria-controls="pills-studio" aria-selected="false">
-                                스튜디오
-                            </button>
-                        </li>
-                        <li class="nav-item d-flex align-items-center" role="presentation">
-                            <button class="tab_button-text detail-title" id="pills-tab03" data-bs-toggle="pill" data-bs-target="#pills-dress" type="button" role="tab" aria-controls="pills-dress" aria-selected="false">
-                                드레스
-                            </button>
-                        </li>
-                        <li class="nav-item d-flex align-items-center" role="presentation">
-                            <button class="tab_button-text detail-title" id="pills-tab04" data-bs-toggle="pill" data-bs-target="#pills-makeup" type="button" role="tab" aria-controls="pills-makeup" aria-selected="false">
-                                메이크업
-                            </button>
-                        </li>
-                        <li class="nav-item d-flex align-items-center" role="presentation">
-                            <button class="tab_button-text detail-title" id="pills-tab05" data-bs-toggle="pill" data-bs-target="#pills-suit" type="button" role="tab" aria-controls="pills-suit" aria-selected="false">
-                                턱시도
-                            </button>
-                        </li>
-                        <li class="nav-item d-flex align-items-center" role="presentation">
-                            <button class="tab_button-text detail-title" id="pills-tab06" data-bs-toggle="pill" data-bs-target="#pills-invitation" type="button" role="tab" aria-controls="pills-invitation" aria-selected="false">
-                                청첩장
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="tab-content" id="pills-tabContent">
-                <div class="row tab-pane fade show active" id="pills-hall" role="tabpanel" aria-labelledby="pills-tab01" tabindex="0">
-                    <div class="col-md-3 col-6">
-                        <div>
-                            <img class="img_border img-fluid" src="assets/images/trend-hall_takehotel.png" alt="광명 테이크 호텔">
-                        </div>
-                        <div class="flex-column mt-2">
-                            <p class="detail-title">광명 테이크 호텔</p>
-                            <p class="detail-info mt-1 mb-2">광명역 도보 5분, 8M 층고 및 대형 LED 화면</p>
-                            <p class="detail-title">12,000,000~</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <div>
-                            <img class="img_border img-fluid" src="assets/images/trend-hall_tiltedhannam.png" alt="틸티드 한남 용산">
-                        </div>
-                        <div class="flex-column mt-2">
-                            <p class="detail-title">틸티드 한남 용산</p>
-                            <p class="detail-info mt-1 mb-2">한강진역 도보 5분, 프라이빗 하우스 야외 웨딩홀</p>
-                            <p class="detail-title">5,500,000~</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <div>
-                            <img class="img_border img-fluid" src="assets/images/trend-hall_loftgarden.png" alt="로프트 가든 344 양천">
-                        </div>
-                        <div class="flex-column mt-2">
-                            <p class="detail-title">로프트가든344 양천</p>
-                            <p class="detail-info mt-1 mb-2">오목교역 도보 1분, 높은 층고와 웅장한 샹들리에</p>
-                            <p class="detail-title">8,500,000~</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <div>
-                            <img class="img_border img-fluid" src="assets/images/trend-hall_maisonditalie.png" alt="메종 디탈리 수서">
-                        </div>
-                        <div class="flex-column mt-2">
-                            <p class="detail-title">메종 디탈리 수서</p>
-                            <p class="detail-info mt-1 mb-2">수서역 셔틀 운행, 동화같은 아름다운 꽃장식</p>
-                            <p class="detail-title">12,100,000~</p>
-                        </div>
+        </section>
+        <!-- kv section end -->
+        <!-- section02 -->
+        <section class="section02">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="product-main-title text-center">지금 인기 있어요</h2>
                     </div>
                 </div>
-                <div class="row tab-pane fade" id="pills-studio" role="tabpanel" aria-labelledby="pills-tab02" tabindex="0">
-                    <div class="col-md-3 col-6">
-                        <div>
-                            <img class="img_border img-fluid" src="assets/images/trend-studio_joyhour.png" alt="조이아워 스튜디오">
-                        </div>
-                        <div class="flex-column mt-2">
-                            <p class="detail-title">JOY HOUR</p>
-                            <p class="detail-info mt-1 mb-2">제주스냅, 야외촬영, 스드메 패키지 상품</p>
-                            <p class="detail-title">1,100,000~</p>
+                <div class="row tab-list">
+                    <div class="col-2 d-flex justify-content-center">
+                        <div class="tab-icon active text-center" data-tab="tab_hall">
+                            <img class="img-fluid" src="assets/images/reservation-images/icon-hall.svg" alt="웨딩홀 아이콘">
+                            <p class="tab-icon_text">웨딩홀</p>
                         </div>
                     </div>
-                    <div class="col-md-3 col-6">
-                        <div>
-                            <img class="img_border img-fluid" src="assets/images/trend-studio_today.png" alt="바로오늘이그날 스튜디오">
-                        </div>
-                        <div class="flex-column mt-2">
-                            <p class="detail-title">바로 오늘이 그날</p>
-                            <p class="detail-info mt-1 mb-2">주택건물의 코지한 스튜디오, 캐주얼한 분위기</p>
-                            <p class="detail-title">1,600,000~</p>
+                    <div class="col-2 d-flex justify-content-center">
+                        <div class="tab-icon text-center" data-tab="tab_studio">
+                            <img class="img-fluid" src="assets/images/reservation-images/icon-studio.svg"
+                                alt="스튜디오 아이콘">
+                            <p class="tab-icon_text">스튜디오</p>
                         </div>
                     </div>
-                    <div class="col-md-3 col-6">
-                        <div>
-                            <img class="img_border img-fluid" src="assets/images/trend-studio_muistudio.png" alt="무이 스튜디오">
-                        </div>
-                        <div class="flex-column mt-2">
-                            <p class="detail-title">MUI STUDIO</p>
-                            <p class="detail-info mt-1 mb-2">화사하고 러블리한 느낌, 그리너리함 가득</p>
-                            <p class="detail-title">2,200,000~</p>
+                    <div class="col-2 d-flex justify-content-center">
+                        <div class="tab-icon text-center" data-tab="tab_dress">
+                            <img class="img-fluid" src="assets/images/reservation-images/icon-dress.svg" alt="드레스 아이콘">
+                            <p class="tab-icon_text">드레스</p>
                         </div>
                     </div>
-                    <div class="col-md-3 col-6">
-                        <div>
-                            <img class="img_border img-fluid" src="assets/images/trend-studio_kuhostudio.png" alt="구호 스튜디오">
-                        </div>
-                        <div class="flex-column mt-2">
-                            <p class="detail-title">구호 스튜디오</p>
-                            <p class="detail-info mt-1 mb-2">인물 중심, 실내 스튜디오, 핀터레스트 감성</p>
-                            <p class="detail-title">1,540,000~</p>
+                    <div class="col-2 d-flex justify-content-center">
+                        <div class="tab-icon text-center" data-tab="tab_makeup">
+                            <img class="img-fluid" src="assets/images/reservation-images/icon-makeup.svg"
+                                alt="메이크업 아이콘">
+                            <p class="tab-icon_text">메이크업</p>
                         </div>
                     </div>
-                </div>
-                <div class="row tab-pane fade" id="pills-dress" role="tabpanel" aria-labelledby="pills-tab03" tabindex="0">
-                    <div class="col-md-3 col-6">
-                        <div>
-                            <img class="img_border img-fluid" src="assets/images/trend-dress_amy.png" alt="하우스 오브 에이미 드레스">
-                        </div>
-                        <div class="flex-column mt-2">
-                            <p class="detail-title">HOUSE OF AMY</p>
-                            <p class="detail-info mt-1 mb-2">비즈, 새틴 등 트렌디한 웨딩 드레스 다수 보유</p>
-                            <p class="detail-title">2,000,000~</p>
+                    <div class="col-2 d-flex justify-content-center">
+                        <div class="tab-icon text-center" data-tab="tab_tuxedo">
+                            <img class="img-fluid" src="assets/images/reservation-images/icon-tuxedo.svg" alt="턱시도 아이콘">
+                            <p class="tab-icon_text">턱시도</p>
                         </div>
                     </div>
-                    <div class="col-md-3 col-6">
-                        <div>
-                            <img class="img_border img-fluid" src="assets/images/trend-dress_florence.png" alt="플로렌스 웨딩 드레스">
-                        </div>
-                        <div class="flex-column mt-2">
-                            <p class="detail-title">플로렌스 웨딩</p>
-                            <p class="detail-info mt-1 mb-2">여성스러움과 우아함, 비즈 맛집 드레스</p>
-                            <p class="detail-title">1,460,000~</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <div>
-                            <img class="img_border img-fluid" src="assets/images/trend-dress_meraki.png" alt="메라키 웨딩 드레스">
-                        </div>
-                        <div class="flex-column mt-2">
-                            <p class="detail-title">메라키 웨딩</p>
-                            <p class="detail-info mt-1 mb-2">자체 제작실 보유 전문 대여샵, 체형 보완 드레스</p>
-                            <p class="detail-title">770,000~</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <div>
-                            <img class="img_border img-fluid" src="assets/images/trend-dress_bridalsuji.png" alt="브라이덜 수지 드레스">
-                        </div>
-                        <div class="flex-column mt-2">
-                            <p class="detail-title">브라이덜 수지</p>
-                            <p class="detail-info mt-1 mb-2">맑은 비즈 및 레이스, 편안하고 우아한 드레스</p>
-                            <p class="detail-title">1,000,000~</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row tab-pane fade" id="pills-makeup" role="tabpanel" aria-labelledby="pills-tab04" tabindex="0">
-                    <div class="col-md-3 col-6">
-                        <div>
-                            <img class="img_border img-fluid" src="assets/images/trend-makeup_museeneuf.png" alt="메이크업샵 김활란뮤네제프">
-                        </div>
-                        <div class="flex-column mt-2">
-                            <p class="detail-title">김활란뮤네제프</p>
-                            <p class="detail-info mt-1 mb-2">자연스러운 물광 피부, 청순한 과즙 메이크업</p>
-                            <p class="detail-title">770,000~</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <div>
-                            <img class="img_border img-fluid" src="assets/images/trend-makeup_kimchungkyung.png" alt="메이크업샵 김청경헤어페이스">
-                        </div>
-                        <div class="flex-column mt-2">
-                            <p class="detail-title">김청경 헤어 페이스</p>
-                            <p class="detail-info mt-1 mb-2">청순 고급 추구미, 우아하면서도 화사한 느낌</p>
-                            <p class="detail-title">660,000~</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <div>
-                            <img class="img_border img-fluid" src="assets/images/trend-makeup_hinaf.png" alt="메이크업샵 히나프">
-                        </div>
-                        <div class="flex-column mt-2">
-                            <p class="detail-title">히나프</p>
-                            <p class="detail-info mt-1 mb-2">맑은 피부 표현, 트렌디함과 힙한 메이크업</p>
-                            <p class="detail-title">605,000~</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <div>
-                            <img class="img_border img-fluid" src="assets/images/trend-makeup_mimm.png" alt="메이크업샵 밈">
-                        </div>
-                        <div class="flex-column mt-2">
-                            <p class="detail-title">MIMM</p>
-                            <p class="detail-info mt-1 mb-2">깨끗하고 맑은 베이스, 트렌디한 과즙 메이크업</p>
-                            <p class="detail-title">660,000~</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row tab-pane fade" id="pills-suit" role="tabpanel" aria-labelledby="pills-tab05" tabindex="0">
-                    <div class="col-md-3 col-6">
-                        <div>
-                            <img class="img_border img-fluid" src="assets/images/trend-tuxedo_classym.png" alt="남성 예복 클래씨엠">
-                        </div>
-                        <div class="flex-column mt-2">
-                            <p class="detail-title">CLASSY M</p>
-                            <p class="detail-info mt-1 mb-2">장인의 고급 맞춤 의복 비스포크 슈트</p>
-                            <p class="detail-title">1,490,000~</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <div>
-                            <img class="img_border img-fluid" src="assets/images/trend-tuxedo_elevato.png" alt="남성 예복 엘레바토">
-                        </div>
-                        <div class="flex-column mt-2">
-                            <p class="detail-title">ELEVATO</p>
-                            <p class="detail-info mt-1 mb-2">트렌디함을 가미한 예복의 정석, 비스포크 슈트</p>
-                            <p class="detail-title">1,080,000~</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <div>
-                            <img class="img_border img-fluid" src="assets/images/trend-tuxedo_baton.png" alt="남성 예복 바톤 권오수">
-                        </div>
-                        <div class="flex-column mt-2">
-                            <p class="detail-title">바톤 권오수</p>
-                            <p class="detail-info mt-1 mb-2">미니멀한 디자인으로 깔끔한 어반 감성의 슈트</p>
-                            <p class="detail-title">1,760,000~</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <div>
-                            <img class="img_border img-fluid" src="assets/images/trend-tuxedo_lordandtailer.png" alt="남성 예복 로드 앤 테일러">
-                        </div>
-                        <div class="flex-column mt-2">
-                            <p class="detail-title">로드 앤 테일러</p>
-                            <p class="detail-info mt-1 mb-2">연예인 시상식 예복, 세련미와 클래식함 맛집</p>
-                            <p class="detail-title">1,810,000~</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row tab-pane fade" id="pills-invitation" role="tabpanel" aria-labelledby="pills-tab06" tabindex="0">
-                    <div class="col-md-3 col-6">
-                        <div>
-                            <img class="img_border img-fluid" src="assets/images/trend-invitaion_weddingletter.png" alt="웨딩레터 청첩장">
-                        </div>
-                        <div class="flex-column mt-2">
-                            <p class="detail-title">WEDDING LETTER</p>
-                            <p class="detail-info mt-1 mb-2">자연스러운 스냅 분위기에 어울리는 LP 청첩장</p>
-                            <p class="detail-title">200,000~</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <div>
-                            <img class="img_border img-fluid" src="assets/images/trend-invitaion_newdawn.png" alt="뉴던스튜디오 청첩장">
-                        </div>
-                        <div class="flex-column mt-2">
-                            <p class="detail-title">뉴던 스튜디오</p>
-                            <p class="detail-info mt-1 mb-2">청첩장 모임 이벤트 가능, 복권 청첩장</p>
-                            <p class="detail-title">109,600~</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <div>
-                            <img class="img_border img-fluid" src="assets/images/trend-invitaion_roseletter.png" alt="로즈레터 청첩장">
-                        </div>
-                        <div class="flex-column mt-2">
-                            <p class="detail-title">ROSE LETTER</p>
-                            <p class="detail-info mt-1 mb-2">은은한 펄 리본 장식과 로맨틱 무드 커스텀</p>
-                            <p class="detail-title">135,000~</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <div>
-                            <img class="img_border img-fluid" src="assets/images/trend-invitaion_osisi.png" alt="오시시 청첩장">
-                        </div>
-                        <div class="flex-column mt-2">
-                            <p class="detail-title">OSISI</p>
-                            <p class="detail-info mt-1 mb-2">세상에 하나 뿐인 커스텀 드로잉 청첩장</p>
-                            <p class="detail-title">180,000~</p>
+                    <div class="col-2 d-flex justify-content-center">
+                        <div class="tab-icon text-center" data-tab="tab_invitation">
+                            <img class="img-fluid" src="assets/images/reservation-images/icon-invitation.svg"
+                                alt="청첩장 아이콘">
+                            <p class="tab-icon_text">청첩장</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- section02 end -->
-    <!-- section03 -->
-    <section class="section03">
-        <div class="container">
-            <div class="row sec03-space">
-                <div class="col-12 text-center">
-                    <p class="space-text">
-                        we are getting married
-                    </p>
-                </div>
-            </div>
-            <div class="row sec03-content">
-                <div class="col-md-5 d-none d-md-block">
-                    <div>
-                        <img class="img_border img-fluid" src="assets/images/pick-left.png" alt="에일리최시훈 웨딩화보">
+            <div class="container tab-content active" id="tab_hall">
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/trend-hall01.png" alt="메종디탈리 웨딩홀 이미지">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag01">
+                                #셔틀버스 운행
+                            </p>
+                            <p class="product-info_tag hashtag02">
+                                신규 특가
+                            </p>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                메종 디탈리 수서
+                            </p>
+                            <p>
+                                12,100,000~
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/trend-hall02.png" alt="로메르 웨딩홀 이미지">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag02">
+                                신규 특가
+                            </p>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                르메르웨딩홀 광주
+                            </p>
+                            <p>
+                                3,500,000~
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/trend-hall03.png" alt="DMC타워 웨딩홀 이미지">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag01">
+                                #역세권 1분
+                            </p>
+                            <p class="product-info_tag hashtag02">
+                                신규 특가
+                            </p>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                DMC타워 웨딩
+                            </p>
+                            <p>
+                                16,000,000~
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/trend-hall04.png" alt="셀럽앤어셈 웨딩홀 이미지">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag01">
+                                #역세권 8분
+                            </p>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                셀럽 앤 어셈
+                            </p>
+                            <p>
+                                11,500,000~
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-7 col-12 d-flex flex-column justify-content-between">
-                    <div class="sec03-title">
-                        <div>
-                            <h2>
-                                에일리<span><i class='bx bxs-heart'></i></span>최시훈 's pick
+            </div>
+            <div class="container tab-content" id="tab_studio">
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/trend-studio01.png" alt="조이아워 스튜디오">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag01">
+                                #제주 스냅
+                            </p>
+                            <p class="product-info_tag hashtag02">
+                                스드메 패키지
+                            </p>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                조이아워 스튜디오
+                            </p>
+                            <p>
+                                1,100,000~
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/trend-studio02.png" alt="구호 스튜디오 이미지">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag01">
+                                #웨딩 촬영
+                            </p>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                구호 스튜디오
+                            </p>
+                            <p>
+                                1,540,000~
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/trend-studio03.png" alt="무이 스튜디오 이미지">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag01">
+                                #토탈 촬영
+                            </p>
+                            <p class="product-info_tag hashtag02">
+                                스드메 패키지
+                            </p>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                무이 스튜디오
+                            </p>
+                            <p>
+                                2,200,000~
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/trend-studio04.png" alt="구호 스튜디오 이미지">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag01">
+                                #웨딩 촬영
+                            </p>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                구호 스튜디오
+                            </p>
+                            <p>
+                                1,540,000~
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container tab-content" id="tab_dress">
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/trend-dress01.png"
+                                alt="하우스 오브 에이미 드레스 이미지">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag01">
+                                #촬영+본식
+                            </p>
+                            <p class="product-info_tag hashtag02">
+                                자체 디자인
+                            </p>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                하우스 오브 에이미
+                            </p>
+                            <p>
+                                2,000,000~
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/trend-dress02.png" alt="플로렌스 웨딩 이미지">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag01">
+                                #본식
+                            </p>
+                            <p class="product-info_tag hashtag02">
+                                자체 디자인
+                            </p>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                플로렌스 웨딩
+                            </p>
+                            <p>
+                                1,460,000~
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/trend-dress03.png" alt="메라키 웨딩 이미지">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag01">
+                                #본식
+                            </p>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                메라키 웨딩
+                            </p>
+                            <p>
+                                770,000~
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/trend-dress04.png"
+                                alt="브라이덜 수지 드레스 이미지">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag01">
+                                #촬영+본식
+                            </p>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                브라이덜 수지
+                            </p>
+                            <p>
+                                1,000,000~
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container tab-content" id="tab_makeup">
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/trend-makeup01.png"
+                                alt="김활란뮤제네프 메이크업샵 이미지">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag01">
+                                #신부 전용
+                            </p>
+                            <p class="product-info_tag hashtag02">
+                                웨딩헤어 포함
+                            </p>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                김활란뮤제네프
+                            </p>
+                            <p>
+                                770,000~
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/trend-makeup02.png"
+                                alt="김청경 헤어 페이스 메이크업샵 이미지">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag01">
+                                #신랑+신부
+                            </p>
+                            <p class="product-info_tag hashtag02">
+                                웨딩헤어 포함
+                            </p>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                김청경 헤어 페이스
+                            </p>
+                            <p>
+                                660,000~
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/trend-makeup03.png"
+                                alt="히나프 메이크업샵 이미지">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag01">
+                                #신부 전용
+                            </p>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                히나프
+                            </p>
+                            <p>
+                                605,000~
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/trend-makeup04.png" alt="밈 메이크업샵 이미지">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag01">
+                                #신랑+신부
+                            </p>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                MIMM
+                            </p>
+                            <p>
+                                660,000~
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container tab-content" id="tab_tuxedo">
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/trend-tuxedo01.png"
+                                alt="클래씨엠 남성 예복 브랜드">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag01">
+                                #촬영+본식
+                            </p>
+                            <p class="product-info_tag hashtag02">
+                                대여 가능
+                            </p>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                CLASSY M
+                            </p>
+                            <p>
+                                1,490,000~
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/trend-tuxedo02.png"
+                                alt="엘레바토 남성 예복 브랜드">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag01">
+                                #촬영+본식
+                            </p>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                엘레바또
+                            </p>
+                            <p>
+                                1,080,000~
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/trend-tuxedo03.png"
+                                alt="바톤 권오수 남성 예복 브랜드">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag01">
+                                #촬영
+                            </p>
+                            <p class="product-info_tag hashtag02">
+                                대여 가능
+                            </p>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                바톤 권오수
+                            </p>
+                            <p>
+                                1,760,000~
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/trend-tuxedo04.png"
+                                alt="로드 앤 테일러 남성 예복 브랜드">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag01">
+                                #본식
+                            </p>
+                            <p class="product-info_tag hashtag02">
+                                대여 가능
+                            </p>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                로드 앤 테일러
+                            </p>
+                            <p>
+                                1,810,000~
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container tab-content" id="tab_invitation">
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/trend-invitaion01.png"
+                                alt="웨딩 레터 청첩장 이미지">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag01">
+                                #커스텀디자인
+                            </p>
+                            <p class="product-info_tag hashtag02">
+                                소량제작 가능
+                            </p>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                웨딩 레터
+                            </p>
+                            <p>
+                                200,000~
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/trend-invitaion02.png"
+                                alt="뉴던 스튜디오 청첩장 이미지">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag01">
+                                소량제작 가능
+                            </p>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                뉴던 스튜디오
+                            </p>
+                            <p>
+                                109,600~
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/trend-invitaion03.png"
+                                alt="로즈 레터 청첩장 이미지">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag02">
+                                소량제작 가능
+                            </p>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                로즈 레터
+                            </p>
+                            <p>
+                                135,000~
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/trend-invitaion04.png"
+                                alt="오시시 청첩장 이미지">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag01">
+                                #커스텀디자인
+                            </p>
+                            <p class="product-info_tag hashtag02">
+                                소량제작 가능
+                            </p>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                OSISI
+                            </p>
+                            <p>
+                                180,000~
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section02 end -->
+        <!-- section03 -->
+        <section class="section03">
+            <div class="container">
+                <div class="row sec03-space">
+                    <div class="col-12 text-center">
+                        <p class="space-text">
+                            we are getting married
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="sec03-title">
+                            <h2 class="product-main-title">
+                                에일리<span>♥</span>최시훈 's pick
                             </h2>
                         </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="detail-title">
-                                <p>
-                                    트렌디와 모던함에 사랑스러운 분위기 한스푼,<br>
-                                    에일리 드레스부터 최시훈 턱시도까지 한눈에!
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-12">
+                        <div>
+                            <img class="img_border img-fluid" src="assets/images/pick-left.png" alt="에일리최시훈 웨딩화보">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 d-flex flex-column justify-content-between">
+                        <div class="sec03_pick-content">
+                            <div>
+                                <img class="img_border img-fluid" src="assets/images/pick-right01.png"
+                                    alt="에일리 웨딩화보 이미지">
+                            </div>
+                            <div>
+                                <p class="product-info_title">
+                                    사랑스러운 분위기의 웨딩 헤어메이크업
                                 </p>
                             </div>
-                            <button class="sec03_btn">
-                                <span>view more</span>
-                            </button>
+                        </div>
+                        <div class="sec03_pick-content">
+                            <div>
+                                <img class="img_border img-fluid" src="assets/images/pick-right02.png"
+                                    alt="에일리 웨딩화보 이미지">
+                            </div>
+                            <div>
+                                <p class="product-info_title">
+                                    트렌디함과 모던함이 조화로운 웨딩화보
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="sec03-right_image d-flex">
-                        <div>
-                            <img class="img_border img-fluid" src="assets/images/pick-right-1.png" alt="에일리최시훈 웨딩화보">
-                        </div>
-                        <div>
-                            <img class="img_border img-fluid" src="assets/images/pick-right-2.png" alt="에일리최시훈 웨딩화보">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row sec03-space">
-                <div class="col-12 text-center">
-                    <p class="space-text">
-                        and happily ever after
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- section03 end -->
-    <!-- section04 -->
-    <section class="section04">
-        <div class="container">
-            <div class="row d-flex align-items-center">
-                <div class="col-md-3 col-4">
-                    <div>
-                        <div class="sec04_title">
-                            <h2>WEDDING<br>VENUE</h2>
-                        </div>
-                        <div class="ornament-img">
-                            <img class="img-fluid" src="assets/images/flower-ornament01.png" alt="웨딩 플라워 일러스트">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-9 col-8">
-                    <div class="sec04-06_slide">
-                        <div>
+                    <div class="col-md-4 col-12 d-flex flex-column justify-content-between">
+                        <div class="sec03_pick-content">
                             <div>
-                                <img class="img_border img-fluid" src="assets/images/wedding-venu01.png" alt="스타시티 아트홀 이미지">
+                                <img class="img_border img-fluid" src="assets/images/pick-right03.png"
+                                    alt="에일리 웨딩화보 이미지">
                             </div>
-                            <div class="flex-column mt-2">
-                                <p class="detail-title">스타시티 아트홀</p>
-                                <p class="detail-info mt-1 mb-2">건대입구역 도보 1분, 10M의 높은 층고</p>
-                                <p class="detail-title">9,000,000~</p>
+                            <div>
+                                <p class="product-info_title">
+                                    동화 속 주인공처럼 우아하고 아름답게
+                                </p>
                             </div>
                         </div>
-                        <div>
+                        <div class="sec03_pick-content">
                             <div>
-                                <img class="img_border img-fluid" src="assets/images/wedding-venu02.png" alt="세인트 메리스 웨딩홀 이미지">
+                                <img class="img_border img-fluid" src="assets/images/pick-right04.png"
+                                    alt="에일리 웨딩화보 이미지">
                             </div>
-                            <div class="flex-column mt-2">
-                                <p class="detail-title">세인트 메리스</p>
-                                <p class="detail-info mt-1 mb-2">사당역 도보 5분, 국내 최초 오로라 컨셉</p>
-                                <p class="detail-title">15,350,000~</p>
-                            </div>                    
-                        </div>
-                        <div>
                             <div>
-                                <img class="img_border img-fluid" src="assets/images/wedding-venu03.png" alt="더링크 호텔 서울 웨딩홀 이미지">
-                            </div>
-                            <div class="flex-column mt-2">
-                                <p class="detail-title">더링크 호텔 서울</p>
-                                <p class="detail-info mt-1 mb-2">구로역 도보 3분, 화려한 천장 인테리어</p>
-                                <p class="detail-title">5,000,000~</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <img class="img_border img-fluid" src="assets/images/wedding-venu04.png" alt="석파랑 웨딩홀 이미지">
-                            </div>
-                            <div class="flex-column mt-2">
-                                <p class="detail-title">석파랑 종로</p>
-                                <p class="detail-info mt-1 mb-2">150명 수용 가능, 프라이빗 한옥 스몰웨딩홀</p>
-                                <p class="detail-title">4,000,000~</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <img class="img_border img-fluid" src="assets/images/wedding-venu05.png" alt="르메르 웨딩홀 이미지">
-                            </div>
-                            <div class="flex-column mt-2">
-                                <p class="detail-title">르메르웨딩홀 광주</p>
-                                <p class="detail-info mt-1 mb-2">동화같은 유럽식 앤티풍 장식과 식물 인테리어</p>
-                                <p class="detail-title">3,500,000~</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <img class="img_border img-fluid" src="assets/images/wedding-venu06.png" alt="셀레네하우스 이미지">
-                            </div>
-                            <div class="flex-column mt-2">
-                                <p class="detail-title">셀레네하우스 천안</p>
-                                <p class="detail-info mt-1 mb-2">자연광이 쏟아지는 리조트 컨셉 하우스 웨딩홀</p>
-                                <p class="detail-title">4,000,000~</p>
+                                <p class="product-info_title">
+                                    힙한 감성 가득한 웨딩 가봉 스냅
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- section04 end -->
-    <!-- section05 -->
-    <section class="section05">
-        <div class="container">
-            <div class="sec05-slide">
-                <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col-4">
-                        <div class="slide_title">
-                            <h2>STUDIO</h2>
-                        </div>
-                        <div>
-                            <p class="detail-title">세인트 지지오티</p>
-                            <p class="detail-info mt-1 mb-2">김연아 스냅으로 유명한 감각적인 촬영 맛집</p>
-                            <p class="detail-title">2,200,000~</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-5">
-                        <img class="img-fluid" src="assets/images/color-studio.jpg" alt="세인트지지오티 스튜디오">
-                    </div>
-                </div>
-                <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col-4">
-                        <div class="slide_title">
-                            <h2>DRESS</h2>
-                        </div>
-                        <div>
-                            <p class="detail-title">JUBILEE BRIDE</p>
-                            <p class="detail-info mt-1 mb-2">봄을 닮은 듯 로맨틱하고 우아한 디자인</p>
-                            <p class="detail-title">1,400,000~</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-5">
-                        <img class="img-fluid" src="assets/images/color-dress.jpg" alt="쥬빌리브라이드 드레스">
-                    </div>
-                </div>
-                <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col-4">
-                        <div class="slide_title">
-                            <h2>MAKE UP</h2>
-                        </div>
-                        <div>
-                            <p class="detail-title">HEUMM</p>
-                            <p class="detail-info mt-1 mb-2">헤메부터 네일까지, 1:1 맞춤 토탈 뷰티샵</p>
-                            <p class="detail-title">550,000~</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-5">
-                        <img class="img-fluid" src="assets/images/color-makeup.png" alt="헤움 메이크업샵">
+            <div class="container">
+                <div class="row sec03-space">
+                    <div class="col-12 text-center">
+                        <p class="space-text">
+                            and happily ever after
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- section05 end -->
-    <!-- section06 -->
-    <section class="section06">
-        <div class="container">
-            <div class="section06-middle row d-flex align-items-center">
-                <div class="col-md-3 col-4">
-                    <div>
-                        <div class="sec06_title">
-                            <h2>TUXEDO<br>& SUIT</h2>
-                        </div>
-                        <div class="ornament-img">
-                            <img class="img-fluid" src="assets/images/flower-ornament02.png" alt="웨딩 플라워 일러스트">
-                        </div>
+        </section>
+        <!-- section03 end -->
+        <!-- section04 -->
+        <section class="section04">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="product-main-title text-center">WEDDING VENUE</h2>
                     </div>
                 </div>
-                <div class="col-md-9 col-8">
-                    <div class="sec04-06_slide">
-                        <div>
-                            <div>
-                                <img class="img_border img-fluid" src="assets/images/suit-tuxedo01.png" alt="남성 예복 블랙공 브랜드">
-                            </div>
-                            <div class="flex-column mt-2">
-                                <p class="detail-title">BLAC KONG</p>
-                                <p class="detail-info mt-1 mb-2">기본 클래식에 트렌디함과 힙함 한 스푼</p>
-                                <p class="detail-title">1,000,000~</p>
-                            </div>
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/wedding-venu01.png" alt="스타시티 아트홀 이미지">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag01">
+                                #역세권 1분
+                            </p>
+                            <p class="product-info_tag hashtag02">
+                                잔여타임 특가
+                            </p>
                         </div>
-                        <div>
-                            <div>
-                                <img class="img_border img-fluid" src="assets/images/suit-tuxedo02.png" alt="남성 예복 보헨 브랜드">
-                            </div>
-                            <div class="flex-column mt-2">
-                                <p class="detail-title">BOHEN</p>
-                                <p class="detail-info mt-1 mb-2">합리적 가격의 고품질 정통 맞춤 예복</p>
-                                <p class="detail-title">790,000~</p>
-                            </div>                    
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                스타시티 아트홀
+                            </p>
+                            <p>
+                                9,000,000~
+                            </p>
                         </div>
-                        <div>
-                            <div>
-                                <img class="img_border img-fluid" src="assets/images/suit-tuxedo03.png" alt="남성 예복 해리슨테일러 브랜드">
-                            </div>
-                            <div class="flex-column mt-2">
-                                <p class="detail-title">해리슨 테일러</p>
-                                <p class="detail-info mt-1 mb-2">품격 있는 디테일, 변치 않는 클래식함</p>
-                                <p class="detail-title">890,000~</p>
-                            </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/wedding-venu02.png"
+                                alt="세인트 메리스 웨딩홀 이미지">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag01">
+                                #역세권 5분
+                            </p>
+                            <p class="product-info_tag hashtag02">
+                                신규 특가
+                            </p>
                         </div>
-                        <div>
-                            <div>
-                                <img class="img_border img-fluid" src="assets/images/suit-tuxedo04.png" alt="남성 예복 아프롬 브랜드">
-                            </div>
-                            <div class="flex-column mt-2">
-                                <p class="detail-title">아프롬</p>
-                                <p class="detail-info mt-1 mb-2">절제되고 현대적이며, 남성적인 디자인</p>
-                                <p class="detail-title">2,000,000~</p>
-                            </div>
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                세인트 메리스
+                            </p>
+                            <p>
+                                15,350,000~
+                            </p>
                         </div>
-                        <div>
-                            <div>
-                                <img class="img_border img-fluid" src="assets/images/suit-tuxedo05.png" alt="남성 예복 어포트테일러 브랜드">
-                            </div>
-                            <div class="flex-column mt-2">
-                                <p class="detail-title">어포트 테일러</p>
-                                <p class="detail-info mt-1 mb-2">현대적인 트렌디함과 감각적인 무드의 수트</p>
-                                <p class="detail-title">790,000~</p>
-                            </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/wedding-venu03.png"
+                                alt="더링크 호텔 서울 웨딩홀 이미지">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag01">
+                                #역세권 3분
+                            </p>
+                            <p class="product-info_tag hashtag02">
+                                신규 특가
+                            </p>
                         </div>
-                        <div>
-                            <div>
-                                <img class="img_border img-fluid" src="assets/images/suit-tuxedo06.png" alt="남성 예복 루스트로 브랜드">
-                            </div>
-                            <div class="flex-column mt-2">
-                                <p class="detail-title">루스트로</p>
-                                <p class="detail-info mt-1 mb-2">리젠시 댄디 스타일의 체형별 실루엣 맞춤</p>
-                                <p class="detail-title">1,000,000~</p>
-                            </div>
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                더링크 호텔 서울
+                            </p>
+                            <p>
+                                5,000,000~
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/wedding-venu04.png"
+                                alt="셀레네하우스 웨딩홀 이미지">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag02">
+                                잔여타임 특가
+                            </p>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                셀레네하우스 천안
+                            </p>
+                            <p>
+                                4,000,000~
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- section06 middle -->
-            <div class="row d-flex align-items-center">
-                <div class="col-md-9 col-8">
-                    <div class="sec04-06_slide">
-                        <div>
-                            <div>
-                                <img class="img_border img-fluid" src="assets/images/wedding-invitation01.png" alt="마이오토바이오그라피 청첩장 이미지">
-                            </div>
-                            <div class="flex-column mt-2">
-                                <p class="detail-title">마오바그</p>
-                                <p class="detail-info mt-1 mb-2">추억의 어린시절 사진으로 힙하게</p>
-                                <p class="detail-title">200,000~</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <img class="img_border img-fluid" src="assets/images/wedding-invitation02.png" alt="더세즈 청첩장 이미지">
-                            </div>
-                            <div class="flex-column mt-2">
-                                <p class="detail-title">THE CEZ</p>
-                                <p class="detail-info mt-1 mb-2">지갑에 쏙, 귀여운 팅커벨 사이즈 청첩장</p>
-                                <p class="detail-title">100,000~</p>
-                            </div>                    
-                        </div>
-                        <div>
-                            <div>
-                                <img class="img_border img-fluid" src="assets/images/wedding-invitation03.png" alt="킵포인트 청첩장 이미지">
-                            </div>
-                            <div class="flex-column mt-2">
-                                <p class="detail-title">Keepoint</p>
-                                <p class="detail-info mt-1 mb-2">폴라로이드 느낌의 트렌디한 청첩장</p>
-                                <p class="detail-title">240,000~</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <img class="img_border img-fluid" src="assets/images/wedding-invitation04.png" alt="메이아이플라워 청첩장 이미지">
-                            </div>
-                            <div class="flex-column mt-2">
-                                <p class="detail-title">메이아이플라워</p>
-                                <p class="detail-info mt-1 mb-2">깔끔의 정석, 박위 & 송지은 부부의 pick</p>
-                                <p class="detail-title">296,000~</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <img class="img_border img-fluid" src="assets/images/wedding-invitation05.png" alt="몬드유 청첩장 이미지">
-                            </div>
-                            <div class="flex-column mt-2">
-                                <p class="detail-title">MOND.U</p>
-                                <p class="detail-info mt-1 mb-2">우리만의 일러스트를 담은 귀여운 청첩장</p>
-                                <p class="detail-title">240,000~</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <img class="img_border img-fluid" src="assets/images/wedding-invitation06.png" alt="디어이샤 청첩장 이미지">
-                            </div>
-                            <div class="flex-column mt-2">
-                                <p class="detail-title">디어이샤</p>
-                                <p class="detail-info mt-1 mb-2">이름 N행시, 이승기 & 이다인 부부의 pick</p>
-                                <p class="detail-title">120,000~</p>
-                            </div>
-                        </div>
+        </section>
+        <!-- section04 end -->
+        <!-- section05 -->
+        <section class="section05">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="product-main-title text-center">TUXEDO & SUIT</h2>
                     </div>
                 </div>
-                <div class="col-md-3 col-4 text-end">
-                    <div>
-                        <div class="sec06_title">
-                            <h2>WEDDING<br>CARD</h2>
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/suit-tuxedo01.png" alt="남성 예복 블랙공 브랜드">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag01">
+                                #촬영+본식
+                            </p>
                         </div>
-                        <div class="ornament-img">
-                            <img class="img-fluid" src="assets/images/flower-ornament03.png" alt="웨딩 플라워 일러스트">
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                블랙 공
+                            </p>
+                            <p>
+                                1,500,000~
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/suit-tuxedo03.png"
+                                alt="남성 예복 해리슨테일러 브랜드">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag01">
+                                #촬영+본식
+                            </p>
+                            <p class="product-info_tag hashtag02">
+                                대여 가능
+                            </p>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                해리슨 테일러
+                            </p>
+                            <p>
+                                890,000~
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/suit-tuxedo04.png" alt="남성 예복 아프롬 브랜드">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag01">
+                                #본식
+                            </p>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                아프롬
+                            </p>
+                            <p>
+                                2,000,000~
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/suit-tuxedo06.png"
+                                alt="남성 예복 루스트로 브랜드">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag02">
+                                #본식
+                            </p>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                루스트로
+                            </p>
+                            <p>
+                                1,000,000~
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- section06 end -->
+        </section>
+        <!-- section05 end -->
+        <!-- section06 -->
+        <section class="section06">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="product-main-title text-center">WEDDING CARD</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/wedding-invitation01.png"
+                                alt="마이오토바이오그라피 청첩장 이미지">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag01">
+                                #커스텀디자인
+                            </p>
+                            <p class="product-info_tag hashtag02">
+                                소량제작 가능
+                            </p>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                마이오토바이오그라피
+                            </p>
+                            <p>
+                                200,000~
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/wedding-invitation02.png"
+                                alt="더세즈 청첩장 이미지">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag02">
+                                소량제작 가능
+                            </p>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                더 세즈
+                            </p>
+                            <p>
+                                100,000~
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/wedding-invitation03.png"
+                                alt="킵포인트 청첩장 이미지">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag02">
+                                소량제작 가능
+                            </p>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                킵포인트
+                            </p>
+                            <p>
+                                240,000~
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="./pages/product.html">
+                            <img class="img_border img-fluid" src="assets/images/wedding-invitation04.png"
+                                alt="메이아이플라워 청첩장 이미지">
+                        </a>
+                        <div class="product-content d-flex mt-2">
+                            <p class="product-info_tag hashtag01">
+                                #맞춤 문구
+                            </p>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info_title">
+                                메이아이플라워
+                            </p>
+                            <p>
+                                296,000~
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section06 end -->
+    </main>
+
     <!-- footer -->
     <footer>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-7 col-12">
                     <div class="footer-content_logo">
-                        <img class="img-fluid" src="assets/images/iiDO_logo.png" alt="iiDO 로고 이미지">
+                        <img class="img-fluid" src="assets/images/iiDO_logo.svg" alt="iiDO 로고 이미지">
                     </div>
                     <div class="d-flex flex-wrap footer-content_top">
                         <div>
@@ -844,7 +1200,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="footer-content_bottom col-md-3 col-10 d-flex flex-column justify-content-center align-items-center text-center">
+                <div
+                    class="footer-content_bottom col-md-3 col-10 d-flex flex-column justify-content-center align-items-center text-center">
                     <div class="content_bottom__title">
                         <p>CONTACT US</p>
                     </div>
@@ -867,14 +1224,14 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- slide -->
     <script>
-        $(document).ready(function(){
-            $('.navbar-toggle').click(function(){
+        $(document).ready(function () {
+            $('.navbar-toggle').click(function () {
                 $(this).toggleClass('open');
                 $('.navbar-menu').toggleClass('active');
             });
         });
-        
-        $(document).ready(function(){
+
+        $(document).ready(function () {
             $('.kv-slide').slick({
                 dots: false,
                 infinite: true,
@@ -886,29 +1243,22 @@
                 autoplaySpeed: 6000,
             });
         });
-        $(document).ready(function(){
-            $('.sec05-slide').slick({
-                dots: false,
-                infinite: true,
-                speed: 500,
-                fade: true,
-                cssEase: 'linear',
-                arrows: true,
+
+        $(document).ready(function () {
+            $('.tab-icon').click(function (e) {
+                e.preventDefault();
+
+                let current = $(this).attr('data-tab');
+
+                $('.tab-icon').removeClass('active');
+                $('.tab-content').hide(); // display: none
+
+                $(this).addClass('active');
+                $('#' + current).fadeIn(500); // display: block
             });
-        });
-        $('.sec04-06_slide').slick({
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            responsive: [
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 2
-                    }
-                }
-            ]
         });
     </script>
 </body>
+<!-- End Google Tag Manager (noscript) -->
+
 </html>

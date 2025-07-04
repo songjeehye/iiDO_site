@@ -1,0 +1,102 @@
+@import 'common.scss';
+
+.sub-kv{
+    padding-top: var(--padding-120);
+    padding-bottom: var(--padding-76);
+}
+
+.sub04-section02, .sub04-section03{
+    padding-top: var(--padding-76);
+    padding-bottom: var(--padding-76);
+}
+.content-title{
+    // margin-top: var(--padding-42);
+    // 확인 필요
+    margin-bottom: var(--padding-42);
+}
+
+.sub04-section03{
+    position: relative;
+    .subpage-title{
+        font-size: var(--font-size-42);
+    }
+    .details_bg{
+        font-size: var(--font-size-26);
+        font-weight: var(--font-weight-500);
+        line-height: 160%;
+        color: var(--secondary-scale01);
+    }
+}
+
+.content__details{
+    position: relative;
+
+    .details_bg{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        background: rgba(34, 34, 34, .4);
+        backdrop-filter: blur(2px);
+        border-radius: 20px;
+    }
+}
+
+.sub04-section04{
+    position: relative;
+    height: 100%;
+    padding-top: var(--padding-76);
+    padding-bottom: var(--padding-120);
+
+    .about_Sec04Details:not(:last-child){
+        margin-bottom: var(--margin-48);
+    }
+    .sec04-title{
+        font-size: var(--font-size-42);
+        font-weight: var(--font-weight-500);
+        letter-spacing: var(--letter-spacing);
+        color: var(--primary-color);
+    }
+    .sec04-title_space{
+        height: var(--letter-spacing);
+        background-color: var(--primary-color);
+    }
+
+    .details_bg{
+        color: var(--secondary-scale01);
+        letter-spacing: var(--letter-spacing);
+        .details_bg__title{
+            font-size: var(--font-size-32);
+            font-weight: var(--font-weight-600);
+            margin-bottom: var(--margin-36);
+        }
+        .details_bg__text{
+            font-size: var(--font-size-26);
+            font-weight: var(--font-weight-400);
+        }
+        img{
+            margin-top: var(--margin-36);
+        }
+    }
+}
+
+
+
+@media (min-width: 1200px) and (max-width: 1399px){
+
+}
+@media (min-width: 992px) and (max-width: 1199px){
+
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+
+}
+
+@media (max-width: 575px){
+
+}

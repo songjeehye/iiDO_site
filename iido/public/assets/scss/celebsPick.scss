@@ -1,0 +1,132 @@
+@import 'common.scss';
+
+
+.sub-kv{
+    padding-top: var(--padding-120);
+    padding-bottom: var(--padding-76);
+}
+.sub02-section02{
+    padding-top: var(--padding-76);
+    padding-bottom: var(--padding-76);
+
+    .sec02-slide_title{
+        margin-bottom: var(--padding-42);
+    }
+    .slick-dots{
+        position: static;
+        margin-top: var(--margin-24);
+    }
+    .slick-dots li button:before{
+        font-size: var(--font-size-12);
+        color: var(--font-scale03);
+    }
+    .slick-dots li.slick-active button:before{
+        color: var(--primary-color);
+    }
+}
+.sub02-section03{
+    padding-top: var(--padding-76);
+    padding-bottom: var(--padding-120);
+
+    .sec03-gallery_title{
+        margin-bottom: var(--padding-42);
+    }
+}
+
+.sec03-gallery_content{
+    row-gap: var(--margin-24);
+}
+
+.pick-list{
+    position: relative;
+    overflow: hidden;
+}
+.pick-bg_text01, .pick-bg_text02{
+    position: absolute;
+    transition: all 0.4s;
+    bottom: -40%;
+}
+.product-info_tag{
+    /*width: 70%;*/
+    margin: auto;
+}
+
+.pick-list:hover .pick-bg_text01{
+    bottom: 40%;
+}
+.pick-list:hover .pick-bg_text02{
+    bottom: 30%;
+}
+.pick-bg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(34, 34, 34, .8);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    top: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.pick-list:hover .pick-bg{
+    opacity: 1;
+}
+
+
+.test{
+    font-size: 24px;
+}
+.product-info_tag{
+    padding: var(--margin-4) var(--margin-10);
+    border-radius: 20px;
+    font-size: var(--font-size-12);
+    font-weight: var(--font-weight-400);
+    color: var(--secondary-scale01);
+    &.hashtag02{
+        background-color: var(--primary-color);
+    }
+    margin-bottom: var(--margin-14);
+}
+.pick-bg_text01, .pick-bg_text02{
+    .product-info_price{
+        font-size: var(--font-size-18);
+        font-weight: var(--font-weight-500);
+        letter-spacing: var(--letter-spacing);
+        color: var(--secondary-scale01);
+    }
+    .product-info_title{
+        font-size: var(--font-size-18);
+        font-weight: var(--font-weight-400);
+        color: var(--secondary-scale01);
+        margin-bottom: var(--margin-2);
+    }
+}
+
+
+
+
+
+
+
+
+@media(max-width:1399.98px){
+
+}
+@media(max-width:1199.98px){
+
+}
+@media (max-width:991.98px){
+
+}
+@media(max-width:767.98px){
+
+}
+@media(max-width:575.98px){
+    
+}

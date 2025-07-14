@@ -1,0 +1,76 @@
+@import 'common.scss';
+
+.slick-dots {
+  position: static;
+  margin-top: var(--gap-gutter);
+
+  li {
+    button:before {
+      font-size: var(--font-body-sm);
+      color: var(--quote-color);
+    }
+    &.slick-active {
+      button:before {
+        color: var(--accent-color);
+      }
+    }
+  }
+}
+
+.pick {
+  &__list {
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+      .pick--dim {
+        opacity: 1;
+      }
+      .dim {
+        &__long {
+          bottom: 40%;
+          @media (max-width: 380px) {
+            bottom: 32%;
+          }
+        }
+        &__short {
+          bottom: 30%;
+          @media (max-width: 380px) {
+            bottom: 20%;
+          }
+        }
+      }
+    }
+  }
+
+  &--dim {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    transition: all .5s ease-in-out;
+
+    width: 100%;
+    height: 100%;
+    background: rgba($color: $black-color, $alpha: .6);
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+
+    .dim {
+      &__long, &__short {
+        position: absolute;
+        transition: all .5s ease-in-out;
+        bottom: -40%;
+      }
+    }
+  }
+}
+
+.content__details{
+  color: var(--white-color);
+}

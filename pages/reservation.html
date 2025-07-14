@@ -1,1779 +1,1721 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ii DO</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ii DO</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
-    <!-- bootstrap 5 -->
-    <link rel="stylesheet" href="../assets/css/reservation.css">
-    <!-- style -->
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="../assets/css/reservation.css">
 </head>
 <body>
-    <header>
-        <nav class="nav-bar w-100">
-            <div class="container d-flex justify-content-between align-items-center">
-                <a href="../index.html" class="navbar-logo">
-                    <img class="img-fluid" src="../assets/images/iiDO_logo.svg" alt="로고 이미지">
-                </a>
-                <div class="navbar-menu">
-                    <ul class="d-flex">
-                        <li>
-                            <a href="./aboutUs.html" class="gnb-menu">
-                                About Us
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="gnb-menu">
-                                Reservation
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./celebsPick.html" class="gnb-menu">
-                                Celeb’s Pick
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./gallery.html" class="gnb-menu">
-                                Gallery
-                            </a>
-                        </li>
-                        <div class="navbar-social d-flex gap-3 d-md-none">
-                            <div>
-                                <img class="img-fluid" src="../assets/images/contact-icon-home.png" alt="홈 아이콘"></div>
-                            <div>
-                                <img class="img-fluid" src="../assets/images/contact-icon-instagram.png" alt="인스타그램 아이콘">
-                            </div>
-                            <div>
-                                <img class="img-fluid" src="../assets/images/contact-icon-twitter.png" alt="트위터 아이콘">
-                            </div>
-                        </div>
-                    </ul>
-                </div>
-                <div class="navbar-toggle d-block d-md-none ms-auto">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <!-- header end -->
-    <!-- sub-kv section -->
-    <section class="sub-kv">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <img class="img-fluid" src="../assets/images/reservation-images/reservation-kv.png" alt="웨딩 이미지">
-                </div>
-            </div>
+    
+  <!-- header -->
+  <header>
+    <nav class="navbar w-100">
+      <div class="container d-flex align-items-center">
+        <a href="../index.html" class="navbar__logo">
+          <img src="../assets/images/common/logo_white.svg" alt="iido 로고 이미지" class="img-fluid">
+        </a>
+        <div class="navbar__gnb">
+          <ul class="navbar__menu">
+            <li>
+              <a href="about-us.html" class="navbar__menuList">About Us</a>
+            </li>
+            <li>
+              <a href="#" class="navbar__menuList">Reservation</a>
+            </li>
+            <li>
+              <a href="celebs-pick.html" class="navbar__menuList">Celeb&apos;s Pick</a>
+            </li>
+            <li>
+              <a href="gallery.html" class="navbar__menuList">Gallery</a>
+            </li>
+          </ul>
+          <div class="navbar__social d-flex gap-3 d-md-none d-block mx-auto">
+            <a href="https://section.blog.naver.com/">
+              <img src="../assets/images/common/social-home_white.svg" alt="홈 아이콘 이미지" class="img-fluid">
+            </a>
+            <a href="https://www.instagram.com/">
+              <img src="../assets/images/common/social-instagram_white.svg" alt="인스타그램 아이콘 이미지" class="img-fluid">
+            </a>
+            <a href="https://x.com/">
+              <img src="../assets/images/common/social-twitter_white.svg" alt="트위터 아이콘 이미지" class="img-fluid">
+            </a>
+            <a href="https://www.threads.com/">
+              <img src="../assets/images/common/social-threads_white.svg" alt="스레드 아이콘 이미지" class="img-fluid">
+            </a>
+          </div>
         </div>
+        <div class="navbar__ghostBtn d-block d-md-none ms-auto">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- header end -->
+
+  <!-- main -->
+  <main>
+    <!-- section01 -->
+    <section class="main--header spacing--pb01">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <img src="../assets/images/reservation/sub-visual__reservation.png" alt="웨딩 화보 이미지" class="img-fluid img__border">
+          </div>
+        </div>
+      </div>
     </section>
-    <!-- sub-kv section end -->
-    <!-- sub01 section02 -->
-    <section class="sub01-section02">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <p class="subpage-title mb-1">
-                        WEDDING PACKAGE
-                    </p>
-                    <p class="subpage-subtitle">
-                        지금 주목해야 할 올인원 웨딩 패키지 상품
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-6">
-                    <div class="sub01-sec02_content_img">
-                        <img class="img-fluid" src="../assets/images/reservation-images/reservation-sec02-left.png" alt="프리미엄 본식 웨딩 패키지 이미지">
-                    </div>
-                    <div class="sub01-sec02_content_text">
-                        <p class="product-info_title mb-1">
-                            프리미엄 본식 웨딩 패키지
-                        </p>
-                        <p>
-                            본식 스드메, 부케 및 예복 / 스냅 + 영상 앨범 2인 촬영
-                        </p>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="sub01-sec02_content_img">
-                        <img class="img-fluid" src="../assets/images/reservation-images/reservation-sec02-right.png" alt="5월 특가 스드메 패키지 이미지">
-                    </div>
-                    <div class="sub01-sec02_content_text">
-                        <p class="product-info_title mb-1">
-                            5월 특가 스드메 패키지
-                        </p>
-                        <p>
-                            테라스스튜디오 + 브라이덜수지 드레스 + 비기닝 메이크업
-                        </p>
-                    </div>
-                </div>
-            </div>
+    <!-- section01 end -->
+
+    <!-- section02 magazine -->
+    <section class="spacing--pt01 spacing--pb01">
+      <div class="container">
+        <div class="row title-mb__sub">
+          <div class="col-12">
+            <h4 class="sub__sectionTitle sub__padding-12">
+              WEDDING PACKAGE
+            </h4>
+          </div>
         </div>
+        <div class="row">
+          <article class="col-6">
+            <img src="../assets/images/reservation/package-img01.png" alt="프리미엄 본식 웨딩 패키지 이미지" class="img-fluid img__border">
+            <div class="sub__padding-12">
+              <h6 class="body__scale01">
+                프리미엄 본식 웨딩 패키지
+              </h6>
+              <p class="body__scale02">
+                본식 스드메 및 예복 / 스냅 + 영상 앨범 2인 촬영
+              </p>
+            </div>
+          </article>
+          <article class="col-6">
+            <img src="../assets/images/reservation/package-img02.png" alt="5월 특가 스드메 패키지 이미지" class="img-fluid img__border">
+            <div class="sub__padding-12">
+              <h6 class="body__scale01">
+                5월 특가 스드메 패키지
+              </h6>
+              <p class="body__scale02">
+                구호 스튜디오 + 로우케이 드레스 + 밈 메이크업
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
-    <!-- sub01 section02 end -->
-    <!-- sub01 section03 -->
-    <section class="sub01-section03">
-        <div class="container">
-            <div class="row tab-list">
-                <div class="col-2 d-flex justify-content-center">
-                    <div class="tab-icon active text-center" data-tab="tab_hall">
-                        <img class="img-fluid" src="../assets/images/reservation-images/icon-hall.svg" alt="웨딩홀 아이콘">
-                        <p class="tab-icon_text">웨딩홀</p>
-                    </div>
-                </div>
-                <div class="col-2 d-flex justify-content-center">
-                    <div class="tab-icon text-center" data-tab="tab_studio">
-                        <img class="img-fluid" src="../assets/images/reservation-images/icon-studio.svg" alt="스튜디오 아이콘">
-                        <p class="tab-icon_text">스튜디오</p>
-                    </div>
-                </div>
-                <div class="col-2 d-flex justify-content-center">
-                    <div class="tab-icon text-center" data-tab="tab_dress">
-                        <img class="img-fluid" src="../assets/images/reservation-images/icon-dress.svg" alt="드레스 아이콘">
-                        <p class="tab-icon_text">드레스</p>
-                    </div>
-                </div>
-                <div class="col-2 d-flex justify-content-center">
-                    <div class="tab-icon text-center" data-tab="tab_makeup">
-                        <img class="img-fluid" src="../assets/images/reservation-images/icon-makeup.svg" alt="메이크업 아이콘">
-                        <p class="tab-icon_text">메이크업</p>
-                    </div>
-                </div>
-                <div class="col-2 d-flex justify-content-center">
-                    <div class="tab-icon text-center" data-tab="tab_tuxedo">
-                        <img class="img-fluid" src="../assets/images/reservation-images/icon-tuxedo.svg" alt="턱시도 아이콘">
-                        <p class="tab-icon_text">턱시도</p>
-                    </div>
-                </div>
-                <div class="col-2 d-flex justify-content-center">
-                    <div class="tab-icon text-center" data-tab="tab_invitation">
-                        <img class="img-fluid" src="../assets/images/reservation-images/icon-invitation.svg" alt="청첩장 아이콘">
-                        <p class="tab-icon_text">청첩장</p>
-                    </div>
-                </div>
-            </div>
+    <!-- section02 end -->
+
+    <!-- section03 tab-menu -->
+    <section class="spacing--pt01 main--footer">
+      <div class="container spacing--pb01">
+        <div class="row tab-list">
+          <div class="col-2 d-flex justify-content-center">
+            <button class="tab-icon active" data-tab="tab__hall">
+              <img src="../assets/images/common/tab-icon_hall.svg" alt="웨딩홀 아이콘" class="img-fluid">
+              <span class="tab__menuName">
+                웨딩홀
+              </span>
+            </button>
+          </div>
+          <div class="col-2 d-flex justify-content-center">
+            <button class="tab-icon" data-tab="tab__studio">
+              <img src="../assets/images/common/tab-icon_studio.svg" alt="스튜디오 아이콘" class="img-fluid">
+              <span class="tab__menuName">
+                스튜디오
+              </span>
+            </button>
+          </div>
+          <div class="col-2 d-flex justify-content-center">
+            <button class="tab-icon" data-tab="tab__dress">
+              <img src="../assets/images/common/tab-icon_dress.svg" alt="드레스 아이콘" class="img-fluid">
+              <span class="tab__menuName">
+                드레스
+              </span>
+            </button>
+          </div>
+          <div class="col-2 d-flex justify-content-center">
+            <button class="tab-icon" data-tab="tab__makeup">
+              <img src="../assets/images/common/tab-icon_makeup.svg" alt="메이크업 아이콘" class="img-fluid">
+              <span class="tab__menuName">
+                메이크업
+              </span>
+            </button>
+          </div>
+          <div class="col-2 d-flex justify-content-center">
+            <button class="tab-icon" data-tab="tab__tuxedo">
+              <img src="../assets/images/common/tab-icon_tuxedo.svg" alt="턱시도 아이콘" class="img-fluid">
+              <span class="tab__menuName">
+                턱시도
+              </span>
+            </button>
+          </div>
+          <div class="col-2 d-flex justify-content-center">
+            <button class="tab-icon" data-tab="tab__card">
+              <img src="../assets/images/common/tab-icon_card.svg" alt="청첩장 아이콘" class="img-fluid">
+              <span class="tab__menuName">
+                청첩장
+              </span>
+            </button>
+          </div>
         </div>
-        <div class="container tab-content active" id="tab_hall">
-            <div class="row">
-                <div class="col-12">
-                    <p class="subpage-title mb-1">
-                        WEDDING VENU
-                    </p>
-                    <p class="subpage-subtitle">
-                        내가 선택할 수 있는 우리만의 웨딩홀
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-hall01.png" alt="광명 테이크 호텔 아이리스홀">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #역세권 5분
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            잔여타임 특가
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            광명 테이크 호텔 아이리스홀
-                        </p>
-                        <p>
-                            12,000,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-hall02.png" alt="틸티드 한남 용산">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #역세권 5분
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            틸티드 한남 용산
-                        </p>
-                        <p>
-                            5,500,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-hall03.png" alt="로프트 가든 344">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #역세권 1분
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            잔여타임 특가
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            로프트 가든 344
-                        </p>
-                        <p>
-                            8,500,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-hall04.png" alt="메종 디탈리 수서">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #셔틀버스 운행
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            신규 특가
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            메종 디탈리 수서
-                        </p>
-                        <p>
-                            12,100,000~
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-hall05.png" alt="스타시티 아트홀">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #역세권 1분
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            잔여타임 특가
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            스타시티 아트홀
-                        </p>
-                        <p>
-                            9,000,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-hall06.png" alt="세인트 메리스">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #역세권 5분
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            신규 특가
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            세인트 메리스
-                        </p>
-                        <p>
-                            15,350,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-hall07.png" alt="더링크 호텔 서울">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #역세권 3분
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            신규 특가
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            더링크 호텔 서울
-                        </p>
-                        <p>
-                            5,000,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-hall08.png" alt="셀레네하우스 천안">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag02">
-                            잔여타임 특가
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            셀레네하우스 천안
-                        </p>
-                        <p>
-                            4,000,000~
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-hall09.png" alt="르메르웨딩홀 광주">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag02">
-                            신규 특가
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            르메르웨딩홀 광주
-                        </p>
-                        <p>
-                            3,500,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-hall10.png" alt="석파랑 종로">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag02">
-                            잔여타임 특가
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            석파랑 종로
-                        </p>
-                        <p>
-                            4,000,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-hall11.png" alt="빌라드 지디 수서">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag02">
-                            잔여타임 특가
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            빌라드 지디 수서
-                        </p>
-                        <p>
-                            20,000,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-hall12.png" alt="DMC타워 웨딩">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #역세권 1분
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            신규 특가
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            DMC타워 웨딩
-                        </p>
-                        <p>
-                            16,000,000~
-                        </p>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="container tab-content" id="tab__hall">
+        <div class="title-mb__sub sub__padding-12">
+          <h4 class="sub__sectionTitle">
+            WEDDING VENU
+          </h4>
+          <p class="sub__sectionSubTitle">
+            내가 선택할 수 있는 우리만의 웨딩홀
+          </p>
         </div>
-        <div class="container tab-content" id="tab_studio">
-            <div class="row">
-                <div class="col-12">
-                    <p class="subpage-title mb-1">
-                        STUDIO
-                    </p>
-                    <p class="subpage-subtitle">
-                        감성적인 무드부터 스타일리시한 컷까지
-                    </p>
-                </div>
+        <div class="card__grid">
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall01.png" alt="메종디탈리 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #셔틀버스 운행
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
             </div>
-            <div class="row">
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-studio01.png" alt="조이아워 스튜디오">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #제주 스냅
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            스드메 패키지
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            조이아워 스튜디오
-                        </p>
-                        <p>
-                            1,100,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-studio02.png" alt="바로 오늘이 그날">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #웨딩 촬영
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            바로 오늘이 그날
-                        </p>
-                        <p>
-                            1,600,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-studio03.png" alt="무이 스튜디오">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #토탈 촬영
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            스드메 패키지
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            무이 스튜디오
-                        </p>
-                        <p>
-                            2,200,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-studio04.png" alt="구호 스튜디오">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #웨딩 촬영
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            구호 스튜디오
-                        </p>
-                        <p>
-                            1,540,000~
-                        </p>
-                    </div>
-                </div>
+            <div class="content__details">
+              <p class="details__name">
+                메종 디탈리 수서
+              </p>
+              <p class="details__price">
+                12,100,000~
+              </p>
             </div>
-            <div class="row">
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-studio05.png" alt="로이 스튜디오">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #세미 촬영
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            스드메 패키지
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            로이 스튜디오
-                        </p>
-                        <p>
-                            1,130,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-studio06.png" alt="연희재">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #세미 촬영
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            스드메 패키지
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            연희재
-                        </p>
-                        <p>
-                            880,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-studio07.png" alt="앤드류 권">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #세미 촬영
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            앤드류 권
-                        </p>
-                        <p>
-                            1,300,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-studio08.png" alt="가을 스튜디오">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #세미 촬영
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            스드메 패키지
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            가을 스튜디오
-                        </p>
-                        <p>
-                            690,000~
-                        </p>
-                    </div>
-                </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall02.png" alt="로메르 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
             </div>
-            <div class="row">
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-studio09.png" alt="휴일 스튜디오">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #웨딩 촬영
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            휴일 스튜디오
-                        </p>
-                        <p>
-                            1,140,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-studio10.png" alt="테오그라피">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #토탈 촬영
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            스드메 패키지
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            테오그라피
-                        </p>
-                        <p>
-                            1,350,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-studio11.png" alt="스튜디오 아이브">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #세미 촬영
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            스튜디오 아이브
-                        </p>
-                        <p>
-                            1,400,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-studio12.png" alt="소르아 웨딩">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #세미 촬영
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            소르아 웨딩
-                        </p>
-                        <p>
-                            1,340,000~
-                        </p>
-                    </div>
-                </div>
+            <div class="content__details">
+              <p class="details__name">
+                르메르웨딩홀 광주
+              </p>
+              <p class="details__price">
+                3,500,000~
+              </p>
             </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall03.png" alt="DMC타워 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 1분
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                DMC 타워 웨딩
+              </p>
+              <p class="details__price">
+                16,000,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall04.png" alt="셀럽앤어셈 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 8분
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                셀럽 앤 어셈
+              </p>
+              <p class="details__price">
+                11,500,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall01.png" alt="메종디탈리 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #셔틀버스 운행
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                메종 디탈리 수서
+              </p>
+              <p class="details__price">
+                12,100,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall02.png" alt="로메르 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                르메르웨딩홀 광주
+              </p>
+              <p class="details__price">
+                3,500,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall03.png" alt="DMC타워 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 1분
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                DMC 타워 웨딩
+              </p>
+              <p class="details__price">
+                16,000,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall04.png" alt="셀럽앤어셈 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 8분
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                셀럽 앤 어셈
+              </p>
+              <p class="details__price">
+                11,500,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall01.png" alt="메종디탈리 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #셔틀버스 운행
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                메종 디탈리 수서
+              </p>
+              <p class="details__price">
+                12,100,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall02.png" alt="로메르 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                르메르웨딩홀 광주
+              </p>
+              <p class="details__price">
+                3,500,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall03.png" alt="DMC타워 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 1분
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                DMC 타워 웨딩
+              </p>
+              <p class="details__price">
+                16,000,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall04.png" alt="셀럽앤어셈 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 8분
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                셀럽 앤 어셈
+              </p>
+              <p class="details__price">
+                11,500,000~
+              </p>
+            </div>
+          </article>
         </div>
-        <div class="container tab-content" id="tab_dress">
-            <div class="row">
-                <div class="col-12">
-                    <p class="subpage-title mb-1">
-                        DRESS
-                    </p>
-                    <p class="subpage-subtitle">
-                        가장 아름다운 실루엣을 위한 웨딩드레스
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-dress01.png" alt="하우스 오브 에이미 드레스">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #촬영+본식
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            자체 디자인
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            하우스 오브 에이미
-                        </p>
-                        <p>
-                            2,000,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-dress02.png" alt="플로렌스 웨딩 드레스">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #본식
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            자체 디자인
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            플로렌스 웨딩
-                        </p>
-                        <p>
-                            1,460,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-dress03.png" alt="메라키 웨딩 드레스">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #본식
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            메라키 웨딩
-                        </p>
-                        <p>
-                            770,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-dress04.png" alt="브라이덜 수지 드레스">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #촬영+본식
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            브라이덜 수지
-                        </p>
-                        <p>
-                            1,000,000~
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-dress05.png" alt="로우케이 드레스">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #촬영
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            로우케이
-                        </p>
-                        <p>
-                            970,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-dress06.png" alt="쥬빌리 브라이드 드레스">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #촬영+본식
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            자체 디자인
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            쥬빌리 브라이드
-                        </p>
-                        <p>
-                            1,800,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-dress07.png" alt="브라이덜 공">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #본식
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            자체 디자인
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            브라이덜 공
-                        </p>
-                        <p>
-                            1,600,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-dress08.png" alt="조슈아 벨 브라이덜">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #촬영+본식
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            자체 디자인
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            조슈아 벨 브라이덜
-                        </p>
-                        <p>
-                            1,500,000~
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-dress09.png" alt="셀린 아뜰리에">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #촬영+본식
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            셀린 아뜰리에
-                        </p>
-                        <p>
-                            1,350,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-dress10.png" alt="디유드 라포엠">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #촬영
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            디유드 라포엠
-                        </p>
-                        <p>
-                            1,000,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-dress11.png" alt="루이즈 블랑">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #촬영+본식
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            자체 디자인
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            루이즈 블랑
-                        </p>
-                        <p>
-                            1,200,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-dress12.png" alt="에델린">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #촬영+본식
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            에델린
-                        </p>
-                        <p>
-                            1,100,000~
-                        </p>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="container tab-content" id="tab__studio">
+        <div class="title-mb__sub sub__padding-12">
+          <h4 class="sub__sectionTitle">
+            STUDIO
+          </h4>
+          <p class="sub__sectionSubTitle">
+            감성적인 무드부터 스타일리시한 컷까지
+          </p>
         </div>
-        <div class="container tab-content" id="tab_makeup">
-            <div class="row">
-                <div class="col-12">
-                    <p class="subpage-title mb-1">
-                        MAKE UP
-                    </p>
-                    <p class="subpage-subtitle">
-                        자연스러운 아름다움에 감각을 더한 브라이덜 메이크업
-                    </p>
-                </div>
+        <div class="card__grid">
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall01.png" alt="메종디탈리 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #셔틀버스 운행
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
             </div>
-            <div class="row">
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-makeup01.png" alt="김활란뮤제네프 메이크업샵">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #신부 전용
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            웨딩헤어 포함
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            김활란뮤제네프
-                        </p>
-                        <p>
-                            770,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-makeup02.png" alt="김청경 헤어 페이스 메이크업샵">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #신랑+신부
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            웨딩헤어 포함
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            김청경 헤어 페이스
-                        </p>
-                        <p>
-                            660,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-makeup03.png" alt="히나프 메이크업샵">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #신부 전용
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            히나프
-                        </p>
-                        <p>
-                            605,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-makeup04.png" alt="밈 메이크업샵">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #신랑+신부
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            MIMM
-                        </p>
-                        <p>
-                            660,000~
-                        </p>
-                    </div>
-                </div>
+            <div class="content__details">
+              <p class="details__name">
+                메종 디탈리 수서
+              </p>
+              <p class="details__price">
+                12,100,000~
+              </p>
             </div>
-            <div class="row">
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-makeup05.png" alt="헤움 메이크업샵">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #신부 전용
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            웨딩헤어 포함
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            HEUMM
-                        </p>
-                        <p>
-                            605,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-makeup06.png" alt="겐그레아 메이크업샵">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #신랑+신부
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            겐그레아
-                        </p>
-                        <p>
-                            550,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-makeup07.png" alt="순수 웨딩 메이크업샵">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #신부 전용
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            웨딩헤어 포함
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            순수 웨딩
-                        </p>
-                        <p>
-                            660,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-makeup08.png" alt="제니하우스 메이크업샵">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #신부 전용
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            웨딩헤어 포함
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            제니하우스
-                        </p>
-                        <p>
-                            660,000~
-                        </p>
-                    </div>
-                </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall02.png" alt="로메르 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
             </div>
-            <div class="row">
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-makeup09.png" alt="비올 웨딩 메이크업샵">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #신부 전용
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            비올 웨딩
-                        </p>
-                        <p>
-                            550,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-makeup10.png" alt="에이바이봄 메이크업샵">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #신랑+신부
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            웨딩헤어 포함
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            에이바이봄
-                        </p>
-                        <p>
-                            660,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-makeup11.png" alt="앤드뮤 메이크업샵">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #신랑+신부
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            웨딩헤어 포함
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            앤드뮤
-                        </p>
-                        <p>
-                            505,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-makeup12.png" alt="정샘물 이스트 메이크업샵">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #신랑+신부
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            정샘물 이스트
-                        </p>
-                        <p>
-                            715,000~
-                        </p>
-                    </div>
-                </div>
+            <div class="content__details">
+              <p class="details__name">
+                르메르웨딩홀 광주
+              </p>
+              <p class="details__price">
+                3,500,000~
+              </p>
             </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall03.png" alt="DMC타워 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 1분
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                DMC 타워 웨딩
+              </p>
+              <p class="details__price">
+                16,000,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall04.png" alt="셀럽앤어셈 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 8분
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                셀럽 앤 어셈
+              </p>
+              <p class="details__price">
+                11,500,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall01.png" alt="메종디탈리 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #셔틀버스 운행
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                메종 디탈리 수서
+              </p>
+              <p class="details__price">
+                12,100,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall02.png" alt="로메르 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                르메르웨딩홀 광주
+              </p>
+              <p class="details__price">
+                3,500,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall03.png" alt="DMC타워 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 1분
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                DMC 타워 웨딩
+              </p>
+              <p class="details__price">
+                16,000,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall04.png" alt="셀럽앤어셈 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 8분
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                셀럽 앤 어셈
+              </p>
+              <p class="details__price">
+                11,500,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall01.png" alt="메종디탈리 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #셔틀버스 운행
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                메종 디탈리 수서
+              </p>
+              <p class="details__price">
+                12,100,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall02.png" alt="로메르 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                르메르웨딩홀 광주
+              </p>
+              <p class="details__price">
+                3,500,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall03.png" alt="DMC타워 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 1분
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                DMC 타워 웨딩
+              </p>
+              <p class="details__price">
+                16,000,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall04.png" alt="셀럽앤어셈 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 8분
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                셀럽 앤 어셈
+              </p>
+              <p class="details__price">
+                11,500,000~
+              </p>
+            </div>
+          </article>
         </div>
-        <div class="container tab-content" id="tab_tuxedo">
-            <div class="row">
-                <div class="col-12">
-                    <p class="subpage-title mb-1">
-                        TUXEDO
-                    </p>
-                    <p class="subpage-subtitle">
-                        신랑의 품격을 완성하는 턱시도 스타일링
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-tuxedo01.png" alt="클래씨엠 턱시도">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #촬영+본식
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            대여 가능
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            CLASSY M
-                        </p>
-                        <p>
-                            1,490,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-tuxedo02.png" alt="엘레바또 턱시도">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #촬영+본식
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            엘레바또
-                        </p>
-                        <p>
-                            1,080,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-tuxedo03.png" alt="바톤 권오수 턱시도">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #촬영
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            대여 가능
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            바톤 권오수
-                        </p>
-                        <p>
-                            1,760,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-tuxedo04.png" alt="로드 앤 테일러 턱시도">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #본식
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            대여 가능
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            로드 앤 테일러
-                        </p>
-                        <p>
-                            1,810,000~
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-tuxedo05.png" alt="블랙 공 턱시도">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #촬영+본식
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            블랙 공
-                        </p>
-                        <p>
-                            1,500,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-tuxedo06.png" alt="보헨 턱시도">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #본식
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            대여 가능
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            보헨
-                        </p>
-                        <p>
-                            910,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-tuxedo07.png" alt="해리슨 테일러 턱시도">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #촬영+본식
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            대여 가능
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            해리슨 테일러
-                        </p>
-                        <p>
-                            890,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-tuxedo08.png" alt="아프롬 턱시도">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #본식
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            아프롬
-                        </p>
-                        <p>
-                            2,000,000~
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-tuxedo09.png" alt="루스트로 턱시도">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #본식
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            대여 가능
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            루스트로
-                        </p>
-                        <p>
-                            1,000,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-tuxedo10.png" alt="어포드테일러 턱시도">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #촬영+본식
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            대여 가능
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            어포드테일러
-                        </p>
-                        <p>
-                            790,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-tuxedo11.png" alt="막스 옴므 턱시도">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #촬영+본식
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            대여 가능
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            막스 옴므
-                        </p>
-                        <p>
-                            960,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-tuxedo12.png" alt="더벨로 테일러 턱시도">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #본식
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            대여 가능
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            더벨로 테일러
-                        </p>
-                        <p>
-                            740,000~
-                        </p>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="container tab-content" id="tab__dress">
+        <div class="title-mb__sub sub__padding-12">
+          <h4 class="sub__sectionTitle">
+            DRESS
+          </h4>
+          <p class="sub__sectionSubTitle">
+            가장 아름다운 실루엣을 위한 웨딩드레스
+          </p>
         </div>
-        <div class="container tab-content" id="tab_invitation">
-            <div class="row">
-                <div class="col-12">
-                    <p class="subpage-title mb-1">
-                        WEDDING CARD
-                    </p>
-                    <p class="subpage-subtitle">
-                        첫 인상부터 특별하게, 감성 가득 청첩장 디자인
-                    </p>
-                </div>
+        <div class="card__grid">
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall01.png" alt="메종디탈리 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #셔틀버스 운행
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
             </div>
-            <div class="row">
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-invitation01.png" alt="웨딩 레터 청첩장">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #커스텀디자인
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            소량제작 가능
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            웨딩 레터
-                        </p>
-                        <p>
-                            200,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-invitation02.png" alt="뉴던 스튜디오 청첩장">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            소량제작 가능
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            뉴던 스튜디오
-                        </p>
-                        <p>
-                            109,600~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-invitation03.png" alt="로즈 레터 청첩장">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag02">
-                            소량제작 가능
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            로즈 레터
-                        </p>
-                        <p>
-                            135,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-invitation04.png" alt="오시시 청첩장">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #커스텀디자인
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            소량제작 가능
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            OSISI
-                        </p>
-                        <p>
-                            180,000~
-                        </p>
-                    </div>
-                </div>
+            <div class="content__details">
+              <p class="details__name">
+                메종 디탈리 수서
+              </p>
+              <p class="details__price">
+                12,100,000~
+              </p>
             </div>
-            <div class="row">
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-invitation05.png" alt="디어이샤 청첩장">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #맞춤 문구
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            DEARISHA
-                        </p>
-                        <p>
-                            120,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-invitation06.png" alt="메이아이플라워 청첩장">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #맞춤 문구
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            메이아이플라워
-                        </p>
-                        <p>
-                            296,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-invitation07.png" alt="몬드유 청첩장">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #커스텀디자인
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            소량제작 가능
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            몬드유
-                        </p>
-                        <p>
-                            240,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-invitation08.png" alt="웨딩피치 프로젝트 청첩장">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag02">
-                            소량제작 가능
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            웨딩피치 프로젝트
-                        </p>
-                        <p>
-                            140,000~
-                        </p>
-                    </div>
-                </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall02.png" alt="로메르 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
             </div>
-            <div class="row">
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-invitation09.png" alt="킵포인트 청첩장">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag02">
-                            소량제작 가능
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            킵포인트
-                        </p>
-                        <p>
-                            240,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-invitation10.png" alt="마이오토바이오그라피 청첩장">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #커스텀디자인
-                        </p>
-                        <p class="product-info_tag hashtag02">
-                            소량제작 가능
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            마이오토바이오그라피
-                        </p>
-                        <p>
-                            200,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-invitation11.png" alt="더 세즈 청첩장">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag02">
-                            소량제작 가능
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            더 세즈
-                        </p>
-                        <p>
-                            100,000~
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <a href="./product.html">
-                        <img class="img-fluid" src="../assets/images/reservation-images/tab-invitation12.png" alt="아르테보 디자인">
-                    </a>
-                    <div class="product-content d-flex mt-2">
-                        <p class="product-info_tag hashtag01">
-                            #커스텀디자인
-                        </p>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-info_title">
-                            아르테보 디자인
-                        </p>
-                        <p>
-                            170,000~
-                        </p>
-                    </div>
-                </div>
+            <div class="content__details">
+              <p class="details__name">
+                르메르웨딩홀 광주
+              </p>
+              <p class="details__price">
+                3,500,000~
+              </p>
             </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall03.png" alt="DMC타워 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 1분
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                DMC 타워 웨딩
+              </p>
+              <p class="details__price">
+                16,000,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall04.png" alt="셀럽앤어셈 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 8분
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                셀럽 앤 어셈
+              </p>
+              <p class="details__price">
+                11,500,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall01.png" alt="메종디탈리 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #셔틀버스 운행
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                메종 디탈리 수서
+              </p>
+              <p class="details__price">
+                12,100,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall02.png" alt="로메르 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                르메르웨딩홀 광주
+              </p>
+              <p class="details__price">
+                3,500,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall03.png" alt="DMC타워 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 1분
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                DMC 타워 웨딩
+              </p>
+              <p class="details__price">
+                16,000,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall04.png" alt="셀럽앤어셈 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 8분
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                셀럽 앤 어셈
+              </p>
+              <p class="details__price">
+                11,500,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall01.png" alt="메종디탈리 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #셔틀버스 운행
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                메종 디탈리 수서
+              </p>
+              <p class="details__price">
+                12,100,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall02.png" alt="로메르 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                르메르웨딩홀 광주
+              </p>
+              <p class="details__price">
+                3,500,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall03.png" alt="DMC타워 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 1분
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                DMC 타워 웨딩
+              </p>
+              <p class="details__price">
+                16,000,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall04.png" alt="셀럽앤어셈 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 8분
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                셀럽 앤 어셈
+              </p>
+              <p class="details__price">
+                11,500,000~
+              </p>
+            </div>
+          </article>
         </div>
+      </div>
+      <div class="container tab-content" id="tab__makeup">
+        <div class="title-mb__sub sub__padding-12">
+          <h4 class="sub__sectionTitle">
+            MAKE UP
+          </h4>
+          <p class="sub__sectionSubTitle">
+            자연스러운 아름다움에 감각을 더한 브라이덜 메이크업
+          </p>
+        </div>
+        <div class="card__grid">
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall01.png" alt="메종디탈리 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #셔틀버스 운행
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                메종 디탈리 수서
+              </p>
+              <p class="details__price">
+                12,100,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall02.png" alt="로메르 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                르메르웨딩홀 광주
+              </p>
+              <p class="details__price">
+                3,500,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall03.png" alt="DMC타워 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 1분
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                DMC 타워 웨딩
+              </p>
+              <p class="details__price">
+                16,000,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall04.png" alt="셀럽앤어셈 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 8분
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                셀럽 앤 어셈
+              </p>
+              <p class="details__price">
+                11,500,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall01.png" alt="메종디탈리 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #셔틀버스 운행
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                메종 디탈리 수서
+              </p>
+              <p class="details__price">
+                12,100,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall02.png" alt="로메르 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                르메르웨딩홀 광주
+              </p>
+              <p class="details__price">
+                3,500,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall03.png" alt="DMC타워 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 1분
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                DMC 타워 웨딩
+              </p>
+              <p class="details__price">
+                16,000,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall04.png" alt="셀럽앤어셈 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 8분
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                셀럽 앤 어셈
+              </p>
+              <p class="details__price">
+                11,500,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall01.png" alt="메종디탈리 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #셔틀버스 운행
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                메종 디탈리 수서
+              </p>
+              <p class="details__price">
+                12,100,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall02.png" alt="로메르 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                르메르웨딩홀 광주
+              </p>
+              <p class="details__price">
+                3,500,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall03.png" alt="DMC타워 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 1분
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                DMC 타워 웨딩
+              </p>
+              <p class="details__price">
+                16,000,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall04.png" alt="셀럽앤어셈 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 8분
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                셀럽 앤 어셈
+              </p>
+              <p class="details__price">
+                11,500,000~
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="container tab-content" id="tab__tuxedo">
+        <div class="title-mb__sub sub__padding-12">
+          <h4 class="sub__sectionTitle">
+            TUXEDO
+          </h4>
+          <p class="sub__sectionSubTitle">
+            신랑의 품격을 완성하는 턱시도 스타일링
+          </p>
+        </div>
+        <div class="card__grid">
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall01.png" alt="메종디탈리 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #셔틀버스 운행
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                메종 디탈리 수서
+              </p>
+              <p class="details__price">
+                12,100,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall02.png" alt="로메르 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                르메르웨딩홀 광주
+              </p>
+              <p class="details__price">
+                3,500,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall03.png" alt="DMC타워 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 1분
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                DMC 타워 웨딩
+              </p>
+              <p class="details__price">
+                16,000,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall04.png" alt="셀럽앤어셈 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 8분
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                셀럽 앤 어셈
+              </p>
+              <p class="details__price">
+                11,500,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall01.png" alt="메종디탈리 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #셔틀버스 운행
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                메종 디탈리 수서
+              </p>
+              <p class="details__price">
+                12,100,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall02.png" alt="로메르 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                르메르웨딩홀 광주
+              </p>
+              <p class="details__price">
+                3,500,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall03.png" alt="DMC타워 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 1분
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                DMC 타워 웨딩
+              </p>
+              <p class="details__price">
+                16,000,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall04.png" alt="셀럽앤어셈 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 8분
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                셀럽 앤 어셈
+              </p>
+              <p class="details__price">
+                11,500,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall01.png" alt="메종디탈리 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #셔틀버스 운행
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                메종 디탈리 수서
+              </p>
+              <p class="details__price">
+                12,100,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall02.png" alt="로메르 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                르메르웨딩홀 광주
+              </p>
+              <p class="details__price">
+                3,500,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall03.png" alt="DMC타워 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 1분
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                DMC 타워 웨딩
+              </p>
+              <p class="details__price">
+                16,000,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall04.png" alt="셀럽앤어셈 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 8분
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                셀럽 앤 어셈
+              </p>
+              <p class="details__price">
+                11,500,000~
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="container tab-content" id="tab__card">
+        <div class="title-mb__sub sub__padding-12">
+          <h4 class="sub__sectionTitle">
+            WEDDING CARD
+          </h4>
+          <p class="sub__sectionSubTitle">
+            첫 인상부터 특별하게, 감성 가득 청첩장 디자인
+          </p>
+        </div>
+        <div class="card__grid">
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall01.png" alt="메종디탈리 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #셔틀버스 운행
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                메종 디탈리 수서
+              </p>
+              <p class="details__price">
+                12,100,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall02.png" alt="로메르 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                르메르웨딩홀 광주
+              </p>
+              <p class="details__price">
+                3,500,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall03.png" alt="DMC타워 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 1분
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                DMC 타워 웨딩
+              </p>
+              <p class="details__price">
+                16,000,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall04.png" alt="셀럽앤어셈 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 8분
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                셀럽 앤 어셈
+              </p>
+              <p class="details__price">
+                11,500,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall01.png" alt="메종디탈리 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #셔틀버스 운행
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                메종 디탈리 수서
+              </p>
+              <p class="details__price">
+                12,100,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall02.png" alt="로메르 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                르메르웨딩홀 광주
+              </p>
+              <p class="details__price">
+                3,500,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall03.png" alt="DMC타워 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 1분
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                DMC 타워 웨딩
+              </p>
+              <p class="details__price">
+                16,000,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall04.png" alt="셀럽앤어셈 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 8분
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                셀럽 앤 어셈
+              </p>
+              <p class="details__price">
+                11,500,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall01.png" alt="메종디탈리 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #셔틀버스 운행
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                메종 디탈리 수서
+              </p>
+              <p class="details__price">
+                12,100,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall02.png" alt="로메르 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                르메르웨딩홀 광주
+              </p>
+              <p class="details__price">
+                3,500,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall03.png" alt="DMC타워 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 1분
+              </span>
+              <span class="hashtag__details tag-bg02">
+                신규 특가
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                DMC 타워 웨딩
+              </p>
+              <p class="details__price">
+                16,000,000~
+              </p>
+            </div>
+          </article>
+          <article class="card-content">
+            <a href="product.html">
+              <img src="../assets/images/common/trend-hall04.png" alt="셀럽앤어셈 웨딩홀 이미지" class="w-100">
+            </a>
+            <div class="content__hashtag">
+              <span class="hashtag__details tag-bg01">
+                #역세권 8분
+              </span>
+            </div>
+            <div class="content__details">
+              <p class="details__name">
+                셀럽 앤 어셈
+              </p>
+              <p class="details__price">
+                11,500,000~
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
+    <!-- section03 end -->
+  </main>
+  <!-- main end -->
 
-
-
-    <!-- footer -->
-    <footer>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-7 col-12">
-                    <div class="footer-content_logo">
-                        <img class="img-fluid" src="../assets/images/iiDO_logo.svg" alt="iiDO 로고 이미지">
-                    </div>
-                    <div class="d-flex flex-wrap footer-content_top">
-                        <div>
-                            <p class="footer-content__text">
-                                <span>상호명: </span>(주)iiDO
-                            </p>
-                        </div>
-                        <div>
-                            <p class="footer-content__text">
-                                <span>주소: </span>인천시 남동구 인주대로 596 엔타스빌딩
-                            </p>
-                        </div>
-                        <div>
-                            <p class="footer-content__text">
-                                <span>대표: </span>강현명, 송지혜
-                            </p>
-                        </div>
-                        <div>
-                            <p class="footer-content__text">
-                                <span>사업자등록번호: </span>012-345-67890
-                            </p>
-                        </div>
-                        <div>
-                            <p class="footer-content__text">
-                                <span>고객센터: </span>3456-7890
-                            </p>
-                        </div>
-                        <div>
-                            <p class="footer-content__text">
-                                <span>휴무: </span>법정공휴일 및 주말
-                            </p>
-                        </div>
-                        <div>
-                            <p class="footer-content__text">
-                                <span>평일: </span>09:00~18:00
-                            </p>
-                        </div>
-                        <div>
-                            <p class="footer-content__text">
-                                Copyright © 2025 iiDO Inc. All rights reserved.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-content_bottom col-md-3 col-10 d-flex flex-column justify-content-center align-items-center text-center">
-                    <div class="content_bottom__title">
-                        <p>CONTACT US</p>
-                    </div>
-                    <div class="d-flex content-bottom__icon">
-                        <img class="img-fluid" src="../assets/images/contact-icon-home.png" alt="홈 아이콘 이미지">
-                        <img class="img-fluid" src="../assets/images/contact-icon-instagram.png" alt="인스타그램 아이콘 이미지">
-                        <img class="img-fluid" src="../assets/images/contact-icon-twitter.png" alt="트위터 아이콘 이미지">
-                    </div>
-                </div>
-            </div>
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="footer__content col-md-8 col-12">
+          <div class="footer__logo">
+            <img src="../assets/images/common/logo_black.svg" alt="iido 로고 이미지" class="img-fluid">
+          </div>
+          <div class="footer__desc d-flex flex-wrap">
+            <p>
+              <span>상호명 : </span>(주)iiDO
+            </p>
+            <p>
+              <span>주소 : </span>인천시 남동구 인주대로 596 엔타스빌딩
+            </p>
+            <p>
+              <span>대표 : </span>송지혜
+            </p>
+            <p>
+              <span>사업자등록번호 : </span>012-345-67890
+            </p>
+            <p>
+              <span>고객센터 : </span>1234-5678
+            </p>
+            <p>
+              <span>휴무 : </span>법정공휴일 및 주말
+            </p>
+            <p>
+              <span>평일 : </span>09:00 ~ 18:00
+            </p>
+          </div>
+          <p class="footer__desc">
+            Copyright &copy; 2025 iiDO Inc. All rights reserved.
+          </p>
         </div>
-    </footer>
+        <div class="col-md-4 col-12 d-flex flex-column justify-content-center">
+          <p class="footer__contact">
+            CONTACT US
+          </p>
+          <div class="footer__social d-flex justify-content-center">
+            <a href="https://section.blog.naver.com/">
+              <img src="../assets/images/common/social-home_black.svg" alt="홈 아이콘 이미지">
+            </a>
+            <a href="https://www.instagram.com/">
+              <img src="../assets/images/common/social-instagram_black.svg" alt="인스타그램 아이콘 이미지">
+            </a>
+            <a href="https://x.com/">
+              <img src="../assets/images/common/social-twitter_black.svg" alt="트위터 아이콘 이미지">
+            </a>
+            <a href="https://www.threads.com/">
+              <img src="../assets/images/common/social-threads_black.svg" alt="스레드 아이콘 이미지">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- bootstrap 5 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- jquery -->
 
-    <script>
-        $(document).ready(function(){
-            $('.navbar-toggle').click(function(){
-                $(this).toggleClass('open');
-                $('.navbar-menu').toggleClass('active');
-            });
-        });
+  <!-- bootstrap 5 Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 
-        $(document).ready(function(){
-            $('.tab-icon').click(function(e){
-                e.preventDefault();
+  <!-- jquery Script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-                let current = $(this).attr('data-tab');
+  <!-- Custom Script -->
+  <script src="../assets/js/main.js"></script>
 
-                $('.tab-icon').removeClass('active');
-                $('.tab-content').hide(); // display: none
-
-                $(this).addClass('active');
-                $('#' + current).fadeIn(500); // display: block
-            });
-        });
-    </script>
 </body>
 </html>

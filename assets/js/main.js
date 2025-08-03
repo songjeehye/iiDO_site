@@ -5,11 +5,16 @@ let prevScroll = 0;
 $(window).on('scroll', function () {
   let currentScroll = $(this).scrollTop();
 
-  if (currentScroll > prevScroll) {
+  if (currentScroll === 0) {
+    // 맨 위에서는 항상 보여주기
+    $('.navbar').removeClass('navbarHide');
+  } else if (currentScroll > prevScroll) {
+    // 아래로 스크롤
     $('.navbar').addClass('navbarHide');
     $('.navbar__ghostBtn').removeClass('open');
     $('.navbar__gnb').removeClass('active');
   } else {
+    // 위로 스크롤
     $('.navbar').removeClass('navbarHide');
   }
 
